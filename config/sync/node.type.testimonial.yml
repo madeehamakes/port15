@@ -1,0 +1,17 @@
+uuid: 8c4bb276-6e07-4645-8563-09d6ee14ebac
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Testimonial
+type: testimonial
+description: 'Testimonials submitted about my work.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

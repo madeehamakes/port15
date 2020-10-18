@@ -1,0 +1,23 @@
+uuid: 8417af52-43ab-403b-b3bb-c5de470f0df2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_links
+    - node.type.portfolio_item
+  module:
+    - link
+id: node.portfolio_item.field_links
+field_name: field_links
+entity_type: node
+bundle: portfolio_item
+label: Link(s)
+description: 'Links to the project''s GitHub page or the project''s landing page.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

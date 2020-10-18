@@ -1,0 +1,23 @@
+uuid: 7cdd8fb8-e96c-4ea3-9511-fb075dff37d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rank_level
+    - node.type.portfolio_item
+  module:
+    - options
+id: node.portfolio_item.field_rank_level
+field_name: field_rank_level
+entity_type: node
+bundle: portfolio_item
+label: 'Rank Level'
+description: 'Choose a higher rank to ensure this content appears towards the top of lists.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 2
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

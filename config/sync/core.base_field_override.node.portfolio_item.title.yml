@@ -1,0 +1,18 @@
+uuid: 73da48fa-86d7-41d8-bdb3-649f82894038
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.portfolio_item
+id: node.portfolio_item.title
+field_name: title
+entity_type: node
+bundle: portfolio_item
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
