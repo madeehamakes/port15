@@ -1,0 +1,19 @@
+uuid: ab7da659-14a5-4684-ad6a-0f5a77fa2d93
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subheading
+    - node.type.portfolio_item
+id: node.portfolio_item.field_subheading
+field_name: field_subheading
+entity_type: node
+bundle: portfolio_item
+label: Subheading
+description: 'Text entered into this field will display between the title and header image'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

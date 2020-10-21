@@ -1,0 +1,23 @@
+uuid: 5bd1b981-65dc-490a-8faf-1fe9768ee213
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.portfolio_item
+  module:
+    - text
+id: node.portfolio_item.body
+field_name: body
+entity_type: node
+bundle: portfolio_item
+label: Description
+description: "<p>Full description of the portfolio item. Feel free to embed images and use multiple headings to describe the item in more detail.</p>\r\n"
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: true
+field_type: text_with_summary

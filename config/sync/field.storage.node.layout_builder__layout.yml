@@ -1,12 +1,10 @@
-uuid: ddeb2a4a-204b-4e44-bced-61c14c711970
+uuid: fec08697-163d-4911-b943-48bcad1a9e0c
 langcode: en
 status: true
 dependencies:
   module:
     - layout_builder
     - node
-_core:
-  default_config_hash: g7kepf2eck__olXZwnmcQdOVAdSZR0cr77Jm-uf6wfA
 id: node.layout_builder__layout
 field_name: layout_builder__layout
 entity_type: node
