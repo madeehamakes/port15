@@ -17,6 +17,7 @@
     "require": {
         "composer/installers": "^1.9",
         "drupal/admin_toolbar": "^2.0",
+        "drupal/bootstrap_barrio": "^5.1",
         "drupal/core-composer-scaffold": "^8.9",
         "drupal/core-dev": "^8.9",
         "drupal/core-project-message": "^8.9",
