@@ -804,3 +804,15 @@ $settings['class_loader_auto_detect'] = FALSE;
 #if (file_exists($app_root . '/' . $site_path . '/settings.ddev.php')) {
 #  include $app_root . '/' . $site_path . '/settings.ddev.php';
 #}
+
+$settings['config_sync_directory'] = '../config/sync';
+
+$config_directories[CONFIG_SYNC_DIRECTORY] = '../config/sync';
+
+
+$settings['hash_salt'] = 't_FPqj6y3Rk2-A_-yYvZGI3dRr24cZnH2UXM93bCx19y99WPCmpY_iN92EjJJEeUOnkCh7V5FA';
+
+if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+  include $app_root . '/' . $site_path . '/settings.local.php';
+}
+
