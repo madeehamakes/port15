@@ -28,3 +28,4 @@
 # Additional
 web/sites/all/drush/drush.yml
 error_log
+.DS_Store
