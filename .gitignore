@@ -26,6 +26,7 @@
 /.env
 
 # Additional
-web/sites/all/drush/drush.yml
+/web/sites/all/drush/drush.yml
 error_log
 .DS_Store
+/web/sites/*/services.yml
