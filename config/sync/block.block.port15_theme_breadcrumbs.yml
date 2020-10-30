@@ -1,15 +1,15 @@
-uuid: b87d4c7b-7124-4096-8cee-d196a1e4437d
+uuid: 2dc4a212-a753-45a4-ad65-193dbccd5d5d
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
+    - port15_theme
 _core:
   default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
-id: bartik_breadcrumbs
-theme: bartik
+id: port15_theme_breadcrumbs
+theme: port15_theme
 region: breadcrumb
 weight: 0
 provider: null

@@ -1,15 +1,15 @@
-uuid: 52960e08-5f35-4c4b-8ab2-a6655fc67c2a
+uuid: 3e162161-e86e-44b0-93e2-ad2027b800d4
 langcode: en
 status: true
 dependencies:
   module:
     - help
   theme:
-    - bartik
+    - port15_theme
 _core:
   default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
-id: bartik_help
-theme: bartik
+id: port15_theme_help
+theme: port15_theme
 region: content
 weight: -30
 provider: null

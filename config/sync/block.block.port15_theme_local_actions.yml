@@ -1,13 +1,13 @@
-uuid: dba02bab-5c59-43df-9072-1fcf604fe65d
+uuid: b3289a7e-d9cb-431c-907a-9bac1de6404a
 langcode: en
 status: true
 dependencies:
   theme:
-    - bartik
+    - port15_theme
 _core:
   default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
-id: bartik_local_actions
-theme: bartik
+id: port15_theme_local_actions
+theme: port15_theme
 region: content
 weight: -20
 provider: null
