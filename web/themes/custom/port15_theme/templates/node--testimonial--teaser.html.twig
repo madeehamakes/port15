@@ -1,9 +1,11 @@
 <div class="node-testimonial-teaser">
-<h2>{{ label }}</h2>
+<h3>{{ label }}</h3>
 {{ content.body }}
-<span>
+{% if not (node.field_testimonial_author.isEmpty or node.field_author_url.isEmpty) %}
+<div class="testimonialAuthor" style="display: inline-block;">
 {{ content.field_testimonial_author }}
 | 
 {{ content.field_author_url }}
-</span>
+</div>
+{% endif %}
 </div>
