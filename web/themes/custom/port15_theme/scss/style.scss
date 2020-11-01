@@ -9,13 +9,61 @@ Description: Bootstrap 4 with Sass
 
 /* GENERAL STYLES
 -------------------------------------------------*/
+/
+$teal: #307c8b;
+$steel-blue: #2b4b5e;
+$red: #e05355;
+$grey: #757575;
+$dark-grey: #333333;
+$deep-red: #c52845;
+$coral: #ff9393;
+
+$primary-headings-text-color: $steel-blue;
+$small-headings-text-color: $dark-grey;
+
+/* HEADING STYLES
+-------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    font-family: Mukta, sans-serif;
+}
+
+h1, h2, h3 {
+    color: $primary-headings-text-color;
+}
+
+h4, h5, h6 {
+    color: $small-headings-text-color;
+}
+
+h1 {
+    font-size: 38px;
+    line-height: 44px;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 36px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1;
+}
+
+/* MISC STYLES 
+--------------------------------------------------*/
 
 body {
   background: $site-bg-color;
 }
-
-/* COLORS 
---------------------------------------------------*/
 
 a {
   color: $accent-shade;
