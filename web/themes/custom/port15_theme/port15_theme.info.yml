@@ -8,6 +8,7 @@ base theme: bootstrap_barrio
 
 libraries:
   - port15_theme/global-styling
+  - port15_theme/fonts
 libraries-override:
   bootstrap_barrio/global-styling: false
   bootstrap_barrio/file: false
