@@ -30,3 +30,4 @@
 error_log
 .DS_Store
 /web/sites/*/services.yml
+/web/themes/custom/*/node_modules/node-sass/
