@@ -1,0 +1,49 @@
+header {
+  .bg-primary {
+    background-color: $site-bg-color !important;
+  }
+
+  .navbar {
+    padding: 0;
+  }
+
+  .logo-text {
+    color: #3d3d3d;
+    margin-top: 18px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 17px;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    max-width: 210px;
+
+    .ml-2,
+    .mx-2 {
+      margin-left: 0px !important;
+    }
+
+    &:hover {
+      opacity: 0.5;
+      text-decoration: none;
+    }
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: $teal;
+    text-transform: uppercase;
+    margin-left: 20px;
+    padding: 26px 10px;
+    padding-top: 26px;
+    padding-right: 10px;
+    padding-bottom: 26px;
+    padding-left: 10px;
+    border-top: 3px solid transparent;
+
+    &:focus,
+    &:hover {
+      color: $teal;
+      border-top: 3px solid $red;
+    }
+  }
+}
