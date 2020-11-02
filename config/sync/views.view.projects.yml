@@ -1,17 +1,17 @@
-uuid: f2a38f76-fb4e-465c-a049-01c8e0f03b06
+uuid: d377b6bb-5d4a-4d22-952d-63d4bf895c94
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - node.type.testimonial
+    - node.type.portfolio_item
   module:
     - node
     - user
-id: testimonials
-label: Testimonials
+id: projects
+label: Projects
 module: views
-description: ''
+description: 'View for listing of projects in portfolio'
 tag: ''
 base_table: node_field_data
 base_field: nid
@@ -134,7 +134,7 @@ display:
           admin_label: ''
           operator: in
           value:
-            testimonial: testimonial
+            portfolio_item: portfolio_item
           group: 1
           exposed: false
           expose:
@@ -191,8 +191,8 @@ display:
       display_extenders: {  }
       use_more: true
       use_more_always: true
-      use_more_text: 'View all testimonials'
-      link_url: /testimonials
+      use_more_text: 'View all work'
+      link_url: work
       link_display: custom_url
     cache_metadata:
       max-age: -1
@@ -205,12 +205,10 @@ display:
   block_1:
     display_plugin: block
     id: block_1
-    display_title: 'Projects block'
+    display_title: Block
     position: 1
     display_options:
       display_extenders: {  }
-      block_description: 'Projects block'
-      display_description: ''
     cache_metadata:
       max-age: -1
       contexts:
