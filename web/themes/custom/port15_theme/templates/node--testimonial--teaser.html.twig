@@ -1,11 +1,17 @@
-<div class="node-testimonial-teaser">
+<div class="node-testimonial-teaser" style="display:inline-block;white-space:nowrap;">
 <h3>{{ label }}</h3>
 {{ content.body }}
-{% if not (node.field_testimonial_author.isEmpty or node.field_author_url.isEmpty) %}
-<div class="testimonialAuthor" style="display: inline-block;">
-{{ content.field_testimonial_author }}
-| 
-{{ content.field_author_url }}
-</div>
-{% endif %}
+    {% if not (node.field_testimonial_author.isEmpty or node.field_author_url.isEmpty)%}
+        <span class="testimonialAuthor" style="display: inline-block; white-space:nowrap;background-color:#EFEFEF;">
+        {{ content.field_testimonial_author }} | {{ content.field_author_url }}
+        </span>
+    {% elseif not (node.field_testimonial_author.isEmpty and node.field_author_url.isEmpty) %}
+        <span class="testimonialAuthor" style="display: inline-block; background-color: aliceblue;">
+        {{ content.field_testimonial_author }}
+        {{ content.field_author_url }}
+        </span>
+    {% else %}
+        <span class="testimonialAuthor" style="display: none;">
+        </span>
+    {% endif %}
 </div>
