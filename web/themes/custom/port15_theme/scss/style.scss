@@ -70,7 +70,18 @@ h4 {
 
 /* VIEWS STYLES 
 ------------------------*/
+.node--view-mode-teaser {
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
+.node--view-mode-teaser h2 {
+    color: $dark-grey;
+    font-size: 1.1em;
+}
 
 /* MISC STYLES 
 --------------------------------------------------*/
