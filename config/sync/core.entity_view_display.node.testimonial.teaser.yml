@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.testimonial.field_testimonial_author
     - node.type.testimonial
   module:
+    - link
     - text
     - user
 id: node.testimonial.teaser
@@ -21,18 +22,36 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    weight: 1
     settings:
       trim_length: 600
     third_party_settings: {  }
     region: content
+  field_author_url:
+    type: link
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  field_testimonial_author:
+    type: string
+    weight: 2
+    region: content
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
   links:
-    weight: 100
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
-  field_author_url: true
   field_preview_image: true
   field_rank_level: true
-  field_testimonial_author: true
