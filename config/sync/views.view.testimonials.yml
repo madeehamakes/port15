@@ -48,8 +48,9 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
-        type: none
+        type: some
         options:
+          items_per_page: 3
           offset: 0
       style:
         type: default
@@ -192,7 +193,7 @@ display:
       use_more: true
       use_more_always: true
       use_more_text: 'View all testimonials'
-      link_url: /testimonials
+      link_url: testimonials
       link_display: custom_url
     cache_metadata:
       max-age: -1
@@ -205,7 +206,7 @@ display:
   block_1:
     display_plugin: block
     id: block_1
-    display_title: 'Projects block'
+    display_title: 'Testimonials block'
     position: 1
     display_options:
       display_extenders: {  }
