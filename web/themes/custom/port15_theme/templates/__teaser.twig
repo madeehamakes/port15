@@ -1,0 +1,24 @@
+<div class="port15-teaser">
+  {% if image_url %}
+    <img src="{{ image_url|striptags|trim }}" alt="{{ image_alt_txt }}" />
+  {% endif %}
+
+
+  <div class="teaser-content">
+  {% if label %}
+    <span class="title-label">{{ label }}</span>
+  {% endif %}
+
+  {% if title %}
+    <h3>{{ title }}</h3>
+  {% endif %}
+
+  {% if long_text %}
+    {{ long_text }}
+  {% endif %}
+
+  {% if link_url and link_text %}
+  <a href="{{ link_url }}" class="teaser-link">{{ link_text }}</a>
+  {% endif %}
+  </div>
+</div>
