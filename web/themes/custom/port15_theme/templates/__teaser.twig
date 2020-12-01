@@ -1,24 +1,30 @@
 <div class="port15-teaser">
-  {% if image_url %}
-    <img src="{{ image_url|striptags|trim }}" alt="{{ image_alt_txt }}" />
-  {% endif %}
 
+  <div class="project--teaser">
+    <div class="teaser--content ">
+      {% if subheading %}
+      <span class="title-label">{{ subheading }}</span>
+      {% endif %}
 
-  <div class="teaser-content">
-  {% if label %}
-    <span class="title-label">{{ label }}</span>
-  {% endif %}
+      {% if title %}
+      <h3>{{ title }}</h3>
+      {% endif %}
 
-  {% if title %}
-    <h3>{{ title }}</h3>
-  {% endif %}
+      {% if summary %}
+      {{ summary }}
+      {% endif %}
 
-  {% if long_text %}
-    {{ long_text }}
-  {% endif %}
-
-  {% if link_url and link_text %}
-  <a href="{{ link_url }}" class="teaser-link">{{ link_text }}</a>
-  {% endif %}
+      {% if link_url and link_text %}
+      <a href="{{ link_url }}" class="teaser-link">{{ link_text }}</a>
+      {% endif %}
+    </div>
   </div>
+
+  <div class="project--img">
+    {% if image_url %}
+    <img src="{{ image_url|striptags|trim }}" alt="{{ image_alt_txt }}" />
+    {% endif %}
+
+  </div>
+
 </div>
