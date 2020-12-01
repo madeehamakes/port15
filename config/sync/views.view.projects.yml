@@ -195,6 +195,7 @@ display:
       use_more_text: 'View all work'
       link_url: work
       link_display: custom_url
+      css_class: Portfolio-Teaser
     cache_metadata:
       max-age: -1
       contexts:
