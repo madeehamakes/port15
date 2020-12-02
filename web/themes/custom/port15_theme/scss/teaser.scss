@@ -1,5 +1,4 @@
 .port15-teaser {
-
   background-color: #fff;
   border: 1px solid #dcdacd;
   display: flex;
@@ -7,7 +6,6 @@
   width: 100%;
   margin-top: 40px;
   margin-bottom: 40px;
-
 
   .project--teaser {
     display: flex;
@@ -59,21 +57,21 @@
     letter-spacing: 1.1px;
     display: inline-block;
 
-
     &:hover {
       border-bottom: 1px solid transparent;
       text-decoration: none;
     }
-
-    .project--img {
-      width: 40%;
-    }
-
-
   }
 
+  .project--img {
+    width: 50%;
 
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
 
+   }
 
 }
 
