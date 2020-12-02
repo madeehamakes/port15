@@ -59,11 +59,20 @@
  * @see template_preprocess_node()
  */
 #}
+{% if node.field_image.0 %}
+{% set img_alt = node.field_image.0.alt %}
+{% else %}
+{% set img_alt = "Portfolio image" %}
+{% endif %}
+
+
+
 {% include '@port15_theme/__teaser.twig' with {
   image_url: content.field_thumbnail_image|render,
-  label: content.field_subheading,
+  image_alt_txt: img_alt,
+  subheading: content.field_subheading,
   title: label,
-  long_text: content.body,
+  summary: content.body,
   link_url: 'node/' ~ node.id,
   link_text: 'Project Overview'
 } only %}
