@@ -1,1 +1,26 @@
 <?php
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Session\AccountInterface;
+use Drupal\Core\Access\AccessResult;
+use Drupal\Core\Entity\ContentEntityInterface;
+/**
+ * Implements hook_entity_access.
+ */
+function port_core_entity_access(EntityInterface $entity, $operation, AccountInterface $account) {
+  if ($entity instanceof ContentEntityInterface) {
+    $has_field_password = $entity->hasField('field_password');
+    if ($has_field_password) {
+      $field_password_is_empty = $entity->get('field_password')->isEmpty();
+      if (!$field_password_is_empty) {
+        if ($operation == 'view') {
+          $password = $entity->get('field_password')->value;
+          $url_token = $_GET['privateToken'];
+          if ($url_token != $password) {
+            return AccessResult::forbidden();
+          }
+        }
+      }
+    }
+  }
+  return AccessResult::neutral();
+}
