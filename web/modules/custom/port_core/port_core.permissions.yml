@@ -1,2 +1,4 @@
 configure entity password settings:
   title: 'Configure global passwords'
+bypass password protection:
+  title: 'Bypass entity password protection'

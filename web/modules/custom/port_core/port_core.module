@@ -8,6 +8,14 @@ use Drupal\Core\Entity\ContentEntityInterface;
  * Implements hook_entity_access.
  */
 function port_core_entity_access(EntityInterface $entity, $operation, AccountInterface $account) {
+  // Get the current user's "User" object
+  $user = \Drupal::currentUser();
+
+  // Check for permission
+  if ($user->hasPermission('bypass password protection')) {
+    return AccessResult::neutral();
+  }
+
   if ($entity instanceof ContentEntityInterface) {
     $has_field_password = $entity->hasField('field_password');
     if ($has_field_password) {
