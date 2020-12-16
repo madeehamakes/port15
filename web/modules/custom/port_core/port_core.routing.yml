@@ -1,0 +1,7 @@
+port_core.password_settings:
+  path: '/admin/config/content/password'
+  defaults:
+    _form: '\Drupal\port_core\Form\EntityPasswordSettingsForm'
+    _title: 'Entity Password Settings'
+  requirements:
+    _permission: 'configure entity password settings'

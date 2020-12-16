@@ -3,6 +3,7 @@ use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Session\AccountInterface;
 use Drupal\Core\Access\AccessResult;
 use Drupal\Core\Entity\ContentEntityInterface;
+
 /**
  * Implements hook_entity_access.
  */
@@ -23,4 +24,25 @@ function port_core_entity_access(EntityInterface $entity, $operation, AccountInt
     }
   }
   return AccessResult::neutral();
+}
+
+/**
+ * Implements hook_form_alter.
+ */
+function port_core_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if (!empty($form['field_password'])) {
+    $config = \Drupal::config('port_core.password_settings');
+    $password_option = $config->get('password_options');
+    if ($password_option == 'list') {
+      $password_options = $config->get('available_passwords');
+      $options = explode("\n", $password_options);
+      $options[''] = '- No password -';
+      $form['field_password']['widget'][0]['value'] = [
+        '#title' => 'Select a password',
+        '#type' => 'select',
+        '#default_value' => NULL,
+        '#options' => $options
+      ];
+    }
+  }
 }
