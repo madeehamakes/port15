@@ -36,7 +36,14 @@ header {
       button.navbar-toggler.navbar-toggler-right {
         border: none;
 
+      }
 
+      .navbar-toggler {
+        /* Border properties set to match webflow mockup */
+        font-size: 24px;
+        border-top: 3px solid transparent;
+        border-radius: none;
+        color: $teal;
       }
 
       #block-port15-theme-main-menu ul.nav.navbar-nav li a {
