@@ -14,8 +14,8 @@
 #}
 {% set attributes = attributes.addClass('site-branding') %}
 {% if site_name %}
-  <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home" class="logo-text">
-    <span class="ml-2 d-none d-md-inline">{{ site_name }}</span>
-  </a>
+<a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home" class="logo-text">
+  <!-- Note: Removed d-none class to keep logo-text always visible -->
+  <span class="ml-2 d-md-inline">{{ site_name }}</span>
+</a>
 {% endif %}
-

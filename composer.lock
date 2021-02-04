@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4ae12ecbc2916aae9217eee0b0dd0b20",
+    "content-hash": "3eb76e69aed03cbed42c0f9b1810c69c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2855,6 +2855,56 @@
             ],
             "description": "Locked core dependencies; require this project INSTEAD OF drupal/core.",
             "time": "2020-10-07T19:37:20+00:00"
+        },
+        {
+            "name": "drupal/line_awesome",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/line_awesome.git",
+                "reference": "1.0.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/line_awesome-1.0.4.zip",
+                "reference": "1.0.4",
+                "shasum": "11394763360a6c748d675f48308daebcf9158861"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.4",
+                    "datestamp": "1611666236",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "David Galeano (gxleano)",
+                    "homepage": "https://www.drupal.org/u/gxleano",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "This module is a free alternative for Font Awesome Icons.",
+            "homepage": "http://drupal.org/project/line_awesome",
+            "keywords": [
+                "Drupal",
+                "Line Awesome"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/line_awesome",
+                "issues": "https://www.drupal.org/project/issues/line_awesome"
+            }
         },
         {
             "name": "drush/drush",
@@ -8764,10 +8814,6 @@
                 "sass",
                 "web"
             ],
-            "support": {
-                "issues": "https://github.com/twbs/bootstrap/issues",
-                "source": "https://github.com/twbs/bootstrap/tree/v4.5.3"
-            },
             "funding": [
                 {
                     "url": "https://opencollective.com/bootstrap",
@@ -8935,12 +8981,12 @@
             "version": "1.9.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/webmozart/assert.git",
+                "url": "https://github.com/webmozarts/assert.git",
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "shasum": ""
             },
@@ -9034,5 +9080,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "1.1.0"
 }
