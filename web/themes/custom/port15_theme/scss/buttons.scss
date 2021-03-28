@@ -52,3 +52,15 @@
   text-decoration: none;
   color: #e05355;
 }
+
+.red-btn {
+  border-bottom-color: #e05355;
+  background-color: #e05355;
+  color: #fff;
+}
+
+.red-btn:hover {
+  background-color: transparent;
+  color: #e05355;
+  text-decoration: none;
+}
