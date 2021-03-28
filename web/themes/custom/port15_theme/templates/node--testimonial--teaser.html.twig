@@ -1,17 +1,83 @@
-<div class="node-testimonial-teaser" style="display:inline-block;white-space:nowrap;">
-<h3>{{ label }}</h3>
-{{ content.body }}
-    {% if not (node.field_testimonial_author.isEmpty or node.field_author_url.isEmpty)%}
-        <span class="testimonialAuthor">
-        {{ content.field_testimonial_author }} | {{ content.field_author_url }}
-        </span>
-    {% elseif not (node.field_testimonial_author.isEmpty and node.field_author_url.isEmpty) %}
-        <span class="testimonialAuthor">
+<style>
+  .node-testimonial-teaser {
+    display: flex;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    align-items: flex-start;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .testimonialAuthor-container {
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+  }
+
+  .testimonialAuthor {
+    color: $grey;
+  }
+
+  .testimonialAuthor a {
+    color: $red;
+    letter-spacing: 0px;
+    padding: 0px;
+  }
+
+  .testimonialAuthor_none {
+    display: none;
+  }
+
+  .cta-icon {
+    margin-right: 24px;
+    padding: 24px;
+    border-radius: 50px;
+    background-color: #fff;
+    font-family: "Line awesome", sans-serif;
+    color: #2b4b5e;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+
+
+  .cta-icon.testimonial {
+    padding: 0px;
+    background-color: transparent;
+    color: #e15255;
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+</style>
+
+
+
+
+
+<div class="node-testimonial-teaser">
+  <div class="cta-icon testimonial"></div>
+  <div>
+    <h3>{{ label }}</h3>
+    {{ content.body }}
+    <div class="testimonialAuthor-container">
+      {% if not (node.field_testimonial_author.isEmpty or node.field_author_url.isEmpty)%}
+      <span class="testimonialAuthor">
+        {{ content.field_testimonial_author }} |
+        {{ content.field_author_url }}
+      </span>
+      {% elseif not (node.field_testimonial_author.isEmpty and node.field_author_url.isEmpty) %}
+      <span class="testimonialAuthor">
         {{ content.field_testimonial_author }}
         {{ content.field_author_url }}
-        </span>
-    {% else %}
-        <span class="testimonialAuthor_none" style="display: none;">
-        </span>
+      </span>
+      {% else %}
+      <span class="testimonialAuthor_none">
+      </span>
+    </div>
     {% endif %}
+  </div>
 </div>
