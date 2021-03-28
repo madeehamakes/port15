@@ -1,0 +1,77 @@
+.Blog-Horizontal-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  .more-link {
+    margin-top: 40px;
+    border-bottom: 2px solid #2b4b5e;
+    -webkit-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+    color: #fff;
+    background-color: #2b4b5e;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 50px;
+
+    &:hover {
+      background-color: transparent;
+    }
+
+    a {
+      letter-spacing: 1.1px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      margin-bottom: auto;
+      flex-grow: 1;
+      /* Add padding to link element due to flexbox */
+      padding: 14px 20px 12px;
+
+      &:hover {
+        color: #2b4b5e;
+      }
+
+    }
+
+  }
+
+
+  .card {
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsla(0, 0%, 46%, 0.3);
+
+    .title {
+      margin-bottom: 10px;
+    }
+
+    .tag {
+      color: #757575;
+      /* To Do: Make this variable*/
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 14px;
+      margin-top: 14px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+  }
+
+
+  .view-content {
+
+    .horizontal-card.views-row:nth-child(even) {
+      .card {
+        .row {
+          flex-direction: row-reverse;
+        }
+      }
+    }
+  }
+
+}
