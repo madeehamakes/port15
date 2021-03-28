@@ -1,0 +1,82 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a block.
+ *
+ * Available variables:
+ * - plugin_id: The ID of the block implementation.
+ * - label: The configured label of the block if visible.
+ * - configuration: A list of the block's configuration values.
+ *   - label: The configured label for the block.
+ *   - label_display: The display settings for the label.
+ *   - provider: The module or other provider that provided this block plugin.
+ *   - Block plugin specific settings will also be stored here.
+ * - content: The content of this block.
+ * - attributes: array of HTML attributes populated by modules, intended to
+ *   be added to the main container tag of this template.
+ *   - id: A valid HTML ID and guaranteed unique.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - content_attributes: Same as attributes, except applied to the main content
+ *   tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_block()
+ *
+ * @ingroup themeable
+ */
+#}
+
+<!-- Copy of block.html.twig -->
+
+<div class="hero-wrapper d-flex flex-column justify-content-between align-items-center">
+
+
+
+  <div class="container hero-contents-wrapper">
+    <div class="hero-contents">
+
+      {{ title_prefix }}
+      {% if label %}
+      <h1 class="hero-h1" {{ title_attributes }}>{{ label }}</h1>
+      {% endif %}
+      {{ title_suffix }}
+
+
+      <div class="horizontal-rule small herorule"></div>
+
+      <p class="hero-lead">I'm a recent graduate of Debug Academy where I've been learning how to become a Drupal
+        Developer. This is my current living resume of work, check back more as I continue to grow my portfolio.</p>
+
+
+      <a class="btn custom-button custom-button-red" href="#" role="button">About Me</a>
+
+    </div>
+
+
+
+  </div>
+
+  <div class="container">
+    <div class="d-flex icons-container justify-content-between mb-3">
+      <div><i class="lab la-css3"></i></div>
+      <div><i class="lab la-php"></i></div>
+      <div><i class="lab la-drupal"></i></i></div>
+      <div><i class="lab la-github"></i></div>
+      <div><i class="lab la-html5"></i></i></div>
+
+    </div>
+
+
+
+  </div>
+
+
+</div>
+
+
+
+</div>
