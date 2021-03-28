@@ -23,6 +23,7 @@
         "drupal/core-dev": "^8.9",
         "drupal/core-project-message": "^8.9",
         "drupal/core-recommended": "^8.9",
+        "drupal/entity_clone": "^1.0@beta",
         "drupal/line_awesome": "^1.0",
         "drush/drush": "^10.0"
     },
