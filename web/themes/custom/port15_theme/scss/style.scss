@@ -22,65 +22,79 @@ $small-headings-text-color: $dark-grey;
 
 /* HEADING STYLES
 -------------------------------------------------*/
-h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
-    font-family: Mukta, sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  font-family: Mukta, sans-serif;
 }
 
-h1, h2, h3 {
-    color: $primary-headings-text-color;
+h1,
+h2,
+h3 {
+  color: $primary-headings-text-color;
 }
 
-h4, h5, h6 {
-    color: $small-headings-text-color;
+h4,
+h5,
+h6 {
+  color: $small-headings-text-color;
 }
 
 h1 {
-    font-size: 38px;
-    line-height: 44px;
+  font-size: 38px;
+  line-height: 44px;
 }
 
 h2 {
-    font-size: 32px;
-    line-height: 36px;
+  font-size: 32px;
+  line-height: 36px;
 }
 
 h3 {
-    font-size: 24px;
-    line-height: 30px;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 h4 {
-    font-size: 18px;
-    line-height: 24px;
-    text-transform: uppercase;
-    letter-spacing: 1;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1;
 }
+
 /* Testimonial STYLES 
 ---------*/
 .testimonialAuthor {
-    font-style: italic;
-    font-size: .8em;
-    text-indent: 2em;
+  font-style: italic;
+  font-size: .8em;
+  text-indent: 2em;
 }
 
 .testimonialAuthor_none {
-    display: none;
+  display: none;
 }
 
 /* VIEWS STYLES 
 ------------------------*/
 .node--view-mode-teaser {
-    border-bottom: 1px solid #dee2e6;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 15px;
-    padding-right: 15px;
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .node--view-mode-teaser h2 {
-    color: $dark-grey;
-    font-size: 1.1em;
+  color: $dark-grey;
+  font-size: 1.1em;
+}
+
+.view-content {
+  padding-top: 40px;
 }
 
 /* MISC STYLES 
@@ -128,6 +142,6 @@ a {
   width: 100%;
 }
 
-.slick > div {
+.slick>div {
   margin: 0 15px;
 }
