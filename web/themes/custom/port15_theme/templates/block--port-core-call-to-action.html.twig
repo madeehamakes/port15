@@ -1,0 +1,61 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a block.
+ *
+ * Available variables:
+ * - plugin_id: The ID of the block implementation.
+ * - label: The configured label of the block if visible.
+ * - configuration: A list of the block's configuration values.
+ *   - label: The configured label for the block.
+ *   - label_display: The display settings for the label.
+ *   - provider: The module or other provider that provided this block plugin.
+ *   - Block plugin specific settings will also be stored here.
+ * - content: The content of this block.
+ * - attributes: array of HTML attributes populated by modules, intended to
+ *   be added to the main container tag of this template.
+ *   - id: A valid HTML ID and guaranteed unique.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - content_attributes: Same as attributes, except applied to the main content
+ *   tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_block()
+ *
+ * @ingroup themeable
+ */
+#}
+
+<!-- Copied from block.html.twig -->
+
+<div class="cta-wrapper">
+  <div class="wrapper d-flex flex-wrap align-items-center justify-content-between">
+    <div class="d-flex">
+      <div class="icon-wrapper">
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="circle d-flex align-items-center justify-content-center">
+            <!--  To Do: Use Line Awesome vs. Font Awesome -->
+            <i class="lab la-drupal"></i>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h2> View My Repo</h2>
+        <p>If you'd like a better idea of how I work, you can see my codebase for all my projects on github, along
+          with
+          other contributions I've made. </p>
+      </div>
+    </div>
+    <div class="button-wrapper">
+
+      <a href="#" class="button white-btn s15-wt-btn cta-row w-inline-block">
+
+        <div>Go To Github</div>
+      </a>
+    </div>
+  </div>
+</div>
