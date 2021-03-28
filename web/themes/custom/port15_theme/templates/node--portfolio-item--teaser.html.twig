@@ -59,20 +59,39 @@
  * @see template_preprocess_node()
  */
 #}
-{% if node.field_image.0 %}
-{% set img_alt = node.field_image.0.alt %}
-{% else %}
-{% set img_alt = "Portfolio image" %}
-{% endif %}
+
+{# You have to render the object into html then strip the tags and trim to fill it out. You would do image_url: content.field_image|render and then in the __twig file you would do image_url|striptags|trim } #}
+
+<!-- A COPY OF NODE.HTML.TWIG -->
+
+{% set tag = 'I am a tag' %}
+{% set title = 'The process behind building my first Drupal project' %}
+{% set body = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.' %}
+
+{% set image_url = 'https://uploads-ssl.webflow.com/5f7f3e9041dfcd50903a6015/5f7fb9db5d57de84aceba263_mobile-mockup-01.jpg' %}
 
 
+<div class="card p-4 mb-3">
+  <div class="row no-gutters align-items-center">
 
-{% include '@port15_theme/__teaser.twig' with {
-  image_url: content.field_thumbnail_image|render,
-  image_alt_txt: img_alt,
-  subheading: content.field_subheading,
-  title: label,
-  summary: content.body,
-  link_url: 'node/' ~ node.id,
-  link_text: 'Project Overview'
-} only %}
+    <div class="col-md-6">
+      <div class="card-body d-flex flex-column align-items-start h-100">
+
+        <p class="tag">{{ tag }} </p>
+        <h3 class="title">{{ title }} </h3>
+        <p> {{ body }} </p>
+
+        <a href="#" class="button link-btn secondary">
+          <div> Project Overview</div>
+        </a>
+
+
+      </div>
+    </div>
+    <div class="col-md-6 imgcol">
+      <img class="card-img" src=" {{ image_url }}" alt="alt text" />
+
+
+    </div>
+  </div>
+</div>
