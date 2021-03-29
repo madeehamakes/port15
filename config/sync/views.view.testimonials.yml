@@ -50,7 +50,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 3
+          items_per_page: 2
           offset: 0
       style:
         type: default
@@ -195,6 +195,7 @@ display:
       use_more_text: 'View all testimonials'
       link_url: testimonials
       link_display: custom_url
+      title: Testimonials
     cache_metadata:
       max-age: -1
       contexts:
@@ -210,7 +211,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      block_description: 'Projects block'
+      block_description: 'Testimonials block'
       display_description: ''
     cache_metadata:
       max-age: -1
