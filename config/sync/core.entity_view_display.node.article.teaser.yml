@@ -30,12 +30,11 @@ content:
     third_party_settings: {  }
     label: hidden
   field_image:
-    type: image
+    type: image_url
     weight: -1
     region: content
     settings:
       image_style: medium
-      image_link: content
     third_party_settings: {  }
     label: hidden
   field_tags:
@@ -45,11 +44,11 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    label: above
+    label: hidden
   links:
     weight: 100
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   comment: true
-  field_image: true
-  field_tags: true
