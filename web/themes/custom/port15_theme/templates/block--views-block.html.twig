@@ -36,23 +36,24 @@
     'block-' ~ plugin_id|clean_class,
   ]
 %}
-<div{{ attributes.addClass(classes) }}>
-  {{ title_prefix }}
-  {% if label %}
+<div {{ attributes.addClass(classes) }}>
+  <!-- Add an inner container div -->
+  <div class="container">
+    {{ title_prefix }}
+    {% if label %}
+    <div class="title__wrapper pt-2 d-flex flex-column align-items-center">
+      <h2 class="mb-2" {{ title_attributes }}>{{ label }}</h2>
+      <div class="horizontal-rule small"> </div>
+    </div>
+    {% endif %}
 
-  <div class="title__wrapper mt-2 d-flex flex-column align-items-center">
-    <h2 class="mb-2" {{ title_attributes }}>{{ label }}</h2>
-    <div class="horizontal-rule small"> </div>
 
+
+    {{ title_suffix }}
+    {% block content %}
+    <div{{ content_attributes.addClass('content') }}>
+      {{ content }}
   </div>
-
-
-
-  {% endif %}
-  {{ title_suffix }}
-  {% block content %}
-  <div{{ content_attributes.addClass('content') }}>
-    {{ content }}
-    </div>
-    {% endblock %}
-    </div>
+  {% endblock %}
+</div>
+</div>
