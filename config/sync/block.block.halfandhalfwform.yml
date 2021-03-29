@@ -1,0 +1,26 @@
+uuid: 9a854afd-7d49-4067-bd17-88af11479ee6
+langcode: en
+status: true
+dependencies:
+  module:
+    - port_core
+    - system
+  theme:
+    - port15_theme
+id: halfandhalfwform
+theme: port15_theme
+region: content
+weight: 6
+provider: null
+plugin: port_core_halfandhalfwform
+settings:
+  id: port_core_halfandhalfwform
+  label: HalfandHalfwForm
+  provider: port_core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /connect
+    negate: false
+    context_mapping: {  }
