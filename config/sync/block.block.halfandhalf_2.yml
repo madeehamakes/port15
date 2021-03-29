@@ -1,0 +1,26 @@
+uuid: 2b1293f9-454c-4c22-a062-ad960bb339be
+langcode: en
+status: true
+dependencies:
+  module:
+    - port_core
+    - system
+  theme:
+    - port15_theme
+id: halfandhalf_2
+theme: port15_theme
+region: content
+weight: 1
+provider: null
+plugin: port_core_half_and_half
+settings:
+  id: port_core_half_and_half
+  label: 'Half and Half'
+  provider: port_core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /about
+    negate: false
+    context_mapping: {  }
