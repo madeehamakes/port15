@@ -1,0 +1,30 @@
+uuid: a5a154f1-472b-432b-bd29-6b251ff9f728
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.portfolio_items
+  module:
+    - system
+    - views
+  theme:
+    - port15_theme
+id: views_block__portfolio_items_block_3
+theme: port15_theme
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:portfolio_items-block_3'
+settings:
+  id: 'views_block:portfolio_items-block_3'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /work
+    negate: false
+    context_mapping: {  }
