@@ -11,7 +11,7 @@ _core:
 id: port15_theme_help
 theme: port15_theme
 region: content
-weight: -30
+weight: -11
 provider: null
 plugin: help_block
 settings:
