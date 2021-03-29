@@ -1,0 +1,20 @@
+.logos-container {
+  background-color: #307c8b;
+
+  .logo-wrapper {
+    max-height: 150px;
+    padding: 24px;
+  }
+
+  .logo-column {
+    width: 20%;
+  }
+
+  .logo-img {
+    max-height: 48px;
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+
+}
