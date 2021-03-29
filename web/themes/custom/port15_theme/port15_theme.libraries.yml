@@ -5,6 +5,7 @@ global-styling:
     js/bootstrap.min.js: {}
     js/barrio.js: {}
     js/custom.js: {}
+    js/accordion.js: {}
   css:
     component:
       css/style.css: {}
