@@ -1,0 +1,26 @@
+uuid: 00138c8b-4e00-49d1-97f6-b4e1a523191d
+langcode: en
+status: true
+dependencies:
+  module:
+    - port_core
+    - system
+  theme:
+    - port15_theme
+id: accordion
+theme: port15_theme
+region: content
+weight: -5
+provider: null
+plugin: port_core_accordion
+settings:
+  id: port_core_accordion
+  label: Accordion
+  provider: port_core
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /faq
+    negate: false
+    context_mapping: {  }
