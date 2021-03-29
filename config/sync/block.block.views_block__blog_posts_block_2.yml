@@ -1,0 +1,30 @@
+uuid: 3fe9a950-43d9-48c7-a5fd-aed41b0cdf3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.blog_posts
+  module:
+    - system
+    - views
+  theme:
+    - port15_theme
+id: views_block__blog_posts_block_2
+theme: port15_theme
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:blog_posts-block_2'
+settings:
+  id: 'views_block:blog_posts-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /blog
+    negate: false
+    context_mapping: {  }
