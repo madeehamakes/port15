@@ -9,7 +9,7 @@ _core:
 id: port15_theme_local_actions
 theme: port15_theme
 region: content
-weight: -20
+weight: -10
 provider: null
 plugin: local_actions_block
 settings:
