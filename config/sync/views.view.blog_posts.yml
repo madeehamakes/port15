@@ -1,15 +1,16 @@
-uuid: d8ebff85-9c0c-4b6a-9119-719646e89008
+uuid: 9fba931c-1fef-4202-843a-c23a6e5c5e50
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.teaser_vertical
     - node.type.article
   module:
     - node
     - user
 id: blog_posts
-label: 'Blog posts'
+label: 'Blog Posts'
 module: views
 description: ''
 tag: ''
@@ -55,15 +56,14 @@ display:
       style:
         type: default
         options:
-          grouping: {  }
-          row_class: ''
+          row_class: 'col-sm-12 col-md-6  col-lg-4'
           default_row_class: true
           uses_fields: false
       row:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: teaser
+          view_mode: teaser_vertical
       fields:
         title:
           id: title
@@ -130,44 +130,14 @@ display:
           id: type
           table: node_field_data
           field: type
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: in
           value:
             article: article
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
       sorts:
         created:
           id: created
@@ -184,6 +154,7 @@ display:
           expose:
             label: ''
           granularity: second
+      title: 'Recent Blog Articles'
       header: {  }
       footer: {  }
       empty: {  }
@@ -192,9 +163,10 @@ display:
       display_extenders: {  }
       use_more: true
       use_more_always: true
-      use_more_text: 'View all blog posts'
-      link_url: blog
+      use_more_text: 'View All Blog Posts'
+      link_url: '#'
       link_display: custom_url
+      css_class: Vertical-Cards
     cache_metadata:
       max-age: -1
       contexts:
@@ -210,12 +182,120 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      block_description: 'Blog posts - 3'
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  block_2:
+    display_plugin: block
+    id: block_2
+    display_title: 'Featured Blog'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      pager:
+        type: some
+        options:
+          items_per_page: 1
+          offset: 0
+      defaults:
+        pager: false
+        style: false
+        row: false
+        css_class: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+      display_description: ''
+      style:
+        type: default
+        options:
+          row_class: 'col-12 horizontal-card'
+          default_row_class: true
+          uses_fields: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: teaser
+      css_class: Horizontal-Cards
+      use_more: false
+      use_more_always: true
+      use_more_text: 'View All Blog Posts'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  block_3:
+    display_plugin: block
+    id: block_3
+    display_title: 'Blog Pagination'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      pager:
+        type: full
+        options:
+          items_per_page: 6
+          offset: 0
+          id: 0
+          total_pages: null
+          tags:
+            previous: ‹
+            next: ' ›'
+            first: '« '
+            last: »
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
+      defaults:
+        pager: false
+        style: false
+        row: false
+        css_class: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+        link_display: false
+        link_url: false
+      display_description: ''
+      style:
+        type: default
+        options:
+          row_class: 'col-sm-12 col-md-6 col-lg-4 mb-3'
+          default_row_class: true
+          uses_fields: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: teaser_vertical
+      css_class: Vertical-Cards
+      use_more: false
+      use_more_always: true
+      use_more_text: 'View All Blog Posts'
+      link_display: '0'
+      link_url: '#'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
