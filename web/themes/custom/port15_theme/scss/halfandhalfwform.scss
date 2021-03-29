@@ -1,0 +1,52 @@
+.img-txt-wrap {
+
+  .form-wrapper {
+    padding: 24px;
+    background-color: #2b4b5e;
+    background-image: linear-gradient(139deg, #307c8b, #2b4b5e);
+  }
+
+  .horizontal-rule {
+    color: #757575;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+  }
+
+  .text-muted {
+    color: #fff !important;
+  }
+
+  .form-wrapper {
+    color: #fff !important;
+  }
+
+  .form-wrapper h2 {
+    text-transform: capitalize;
+    color: #fff !important;
+  }
+
+  .icon-link-wrapper {}
+
+  .icon-link {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #e25255;
+    letter-spacing: 0px;
+    transition: all 400ms ease-in-out;
+  }
+
+  .intro-link:hover {
+    color: #757575;
+    text-decoration: underline;
+  }
+
+
+}
