@@ -1,0 +1,26 @@
+uuid: d7f7a852-3902-48a8-b465-13bc779a1609
+langcode: en
+status: true
+dependencies:
+  module:
+    - port_core
+    - system
+  theme:
+    - port15_theme
+id: hero
+theme: port15_theme
+region: featured_top
+weight: 0
+provider: null
+plugin: port_core_hero
+settings:
+  id: port_core_hero
+  label: Hero
+  provider: port_core
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
