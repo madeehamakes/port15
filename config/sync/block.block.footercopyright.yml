@@ -1,0 +1,20 @@
+uuid: f9407463-f8e4-46e2-adf0-01e967b7a6fa
+langcode: en
+status: true
+dependencies:
+  module:
+    - port_core
+  theme:
+    - port15_theme
+id: footercopyright
+theme: port15_theme
+region: footer_fifth
+weight: -7
+provider: null
+plugin: port_core_footer_copyright
+settings:
+  id: port_core_footer_copyright
+  label: Footer-Copyright
+  provider: port_core
+  label_display: visible
+visibility: {  }
