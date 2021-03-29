@@ -16,6 +16,7 @@ module:
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
+  entity_clone: 0
   field: 0
   field_ui: 0
   file: 0
@@ -25,6 +26,7 @@ module:
   image: 0
   layout_builder: 0
   layout_discovery: 0
+  line_awesome: 0
   link: 0
   menu_link_content: 0
   menu_ui: 0
