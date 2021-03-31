@@ -66,17 +66,6 @@ h4 {
   letter-spacing: 1;
 }
 
-/* Testimonial STYLES 
----------*/
-.testimonialAuthor {
-  font-style: italic;
-  font-size: .8em;
-  text-indent: 2em;
-}
-
-.testimonialAuthor_none {
-  display: none;
-}
 
 /* VIEWS STYLES 
 ------------------------*/
@@ -99,6 +88,11 @@ h4 {
 
 /* MISC STYLES 
 --------------------------------------------------*/
+
+main#content.main-content.col {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 
 body {
   background: $site-bg-color;
