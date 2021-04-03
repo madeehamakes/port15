@@ -31,32 +31,43 @@
 #}
 
 <!-- Copied from block.html.twig -->
-<div class="container">
-  <div class="img-txt-wrap flex-wrap d-flex ">
-    <!-- TO Do: Add vertical image -->
-    <div class="column half-img">
-      <img
-        src="https://uploads-ssl.webflow.com/5f7f3e9041dfcd50903a6015/5f85ea8279431150a1c08641_womanusinglaptop-goldshirt-p-1080.jpeg">
-    </div>
+<!-- Note: This is the template for the blocks that have half an image and half text.  -->
+<!-- To Do: Create reusable blocks based off of this template. Also, how to make resuable blocks that allow for alternation of images/text -->
+<!-- To Do: In some areas this block has a background color -->
 
-
-
-    <div class="column half-text d-flex flex-wrap align-items-center align-content-center">
-
-      <div class="horizontal-rule"> </div>
-
-      <div class="half-text-content">
-        <h2>Get in Touch </h2>
-        <p>
-          I'm always looking to make new connections ignissim convallis. Amet mattis vulputate enim nulla aliquet
-          porttitor lacus.
-        </p>
-        <a href="#" class="button red-btn">
-          <div> Contact Me </div>
-        </a>
-
+<div class="img-text-wrap-container">
+  <div class="container">
+    <!-- Note: If the image appears on the right and text on the left then this class needs to be added to the div below .flex-row-reverse"  -->
+    <div class="img-txt-wrap flex-wrap d-flex ">
+      <!-- TO Do: Add vertical image -->
+      <div class="column half-img">
+        <img
+          src="https://uploads-ssl.webflow.com/5f7f3e9041dfcd50903a6015/5f85ea8279431150a1c08641_womanusinglaptop-goldshirt-p-1080.jpeg">
       </div>
-    </div>
 
+
+
+      <div class="column half-text d-flex flex-wrap align-items-center align-content-center">
+
+        <div class="horizontal-rule"> </div>
+
+
+        <!-- Note: If you need the text to appear on the left then add .left-side to this div -->
+        <div class="half-text-content ">
+          <h2>Get in Touch </h2>
+          <p>
+            I'm always looking to make new connections ignissim convallis. Amet mattis vulputate enim nulla aliquet
+            porttitor lacus.
+          </p>
+          <a href="#" class="button red-btn">
+            <div> Contact Me </div>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
   </div>
+
+
 </div>
