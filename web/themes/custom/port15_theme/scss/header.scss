@@ -4,7 +4,7 @@ header {
   }
 
   .navbar {
-    padding: 0;
+    padding: 0 !important;
   }
 
   .logo-text {
@@ -46,24 +46,30 @@ header {
         color: $teal;
       }
 
-      #block-port15-theme-main-menu ul.nav.navbar-nav li a {
-        color: $teal;
-        text-transform: uppercase;
-        margin-left: 20px;
-        padding: 26px 10px;
-        padding-top: 26px;
-        padding-right: 10px;
-        padding-bottom: 26px;
-        padding-left: 10px;
-        border-top: 3px solid transparent;
+      #block-port15-theme-main-menu ul.nav.navbar-nav li {
 
-        &:focus,
-        &:hover {
+        a {
           color: $teal;
-          border-top: 3px solid $red;
+          text-transform: uppercase;
+          margin-left: 20px;
+          padding: 26px 10px;
+          padding-top: 26px;
+          padding-right: 10px;
+          padding-bottom: 26px;
+          padding-left: 10px;
+          border-top: 3px solid transparent;
+
+          &:focus,
+          &:hover {
+            color: $teal;
+            border-top: 3px solid $red;
+          }
+
+
         }
 
-        .is-active {
+
+        a.is-active {
           border-top: 3px solid $teal;
         }
 
