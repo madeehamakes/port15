@@ -173,6 +173,8 @@
   </aside>
 </div>
 {% endif %}
+<!-- 
+Note: Under Appearance- Port15-Theme -> Regions -> The footer ones were changed to have a col class rather than row so that content could be displayed side by side.  -->
 <footer class="site-footer">
   {% block footer %}
   <div class="{{ container }}">
@@ -185,6 +187,7 @@
         {{ page.footer_fourth }}
       </div>
       {% endif %}
+      <!--   Footer fith is where copyright is placed so it's at the bottom of the footer -->
       {% if page.footer_fifth %}
       <div class="site-footer__bottom">
         {{ page.footer_fifth }}
