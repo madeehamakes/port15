@@ -1,4 +1,7 @@
-.title__wrapper {
+/* Notes: Block title styles  */
+
+.section__wrapper {
+  padding-top: 80px;
 
   .horizontal-rule {
     height: 1px;
@@ -6,6 +9,25 @@
 
   }
 
+
+  .horizontal-rule.small {
+    width: 140px;
+
+  }
+
+}
+
+/* 
+Notes: Styles for the Title of the Page */
+.title__wrapper {
+  padding-top: 24px;
+
+
+  .horizontal-rule {
+    height: 1px;
+    background-color: #757575;
+
+  }
 
   .horizontal-rule.small {
     width: 140px;
