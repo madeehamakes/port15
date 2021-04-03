@@ -1,38 +1,55 @@
 /* Accordions */
 .accordion-wrapper {
-  margin-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
-  .accordion>.card {
-    border: none;
-  }
+  .accordion {
+    .card {
+      border: none;
 
-  .accordion>.card>.card-header {
-    background-color: initial;
-    border: none;
-    padding: 0px;
-  }
+      .card-header {
+        background-color: initial;
+        border: none;
+        padding: 0px;
 
-  .accordion>.card>.card-header>.card-body {
-    padding: 0px;
-    margin-bottom: 40px;
-  }
+        h3 {
+          margin-bottom: 20px;
+          padding-bottom: 10px;
+          border-bottom: 1px solid hsla(0, 0%, 46%, 0.5);
+        }
 
-  .accordion>.card>.card-header h3 {
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid hsla(0, 0%, 46%, 0.5);
-  }
+        h3:hover {
+          color: #e25255;
+        }
 
-  .accordion>.card>.card-header h3:hover {
-    color: #e25255;
-  }
+        span {
+          .toggle-icon {
+            color: red;
+            font-size: 25px;
+          }
 
-  .card>.card-header>span {
-    .toggle-icon {
-      color: red;
-      font-size: 25px;
+        }
+
+      }
+
+      .collapse {
+        .card-body {
+          padding: 0px !important;
+          margin-bottom: 40px;
+        }
+      }
+
+
+
+
+
+
     }
 
+
+
   }
+
+
 
 }
