@@ -1,38 +1,58 @@
-.page-item,
-.pager__item--next {
-  margin-right: 4px;
-  margin-left: 4px;
-  padding-right: 4px;
-  padding-left: 4px;
-  -webkit-transition: opacity 400ms ease-in-out;
-  transition: opacity 400ms ease-in-out;
-  line-height: 16px;
+.pagewrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  padding-bottom: 2.5rem;
+  border-top-style: solid;
+  border-top-color: hsla(0, 0%, 46%, 0.2);
+  text-align: center;
 
-
-
-  .page-link {
-    border: none;
-    color: #e15355;
-
-    &:hover,
-    &:active {
-      border: none;
-      opacity: 0.6;
-      color: #e15355;
-      background-color: transparent;
-
-    }
-
-
-
-
-  }
 
 }
 
-.page-item.active .page-link {
-  border-bottom: 1px solid #000;
-  opacity: 0.6;
-  background-color: transparent;
-  color: #e15355;
+
+nav {
+  padding-top: 16px;
+  padding-bottom: 40px;
+
+  .page-item,
+  .pager__item--next {
+    margin-right: 4px;
+    margin-left: 4px;
+    padding-right: 4px;
+    padding-left: 4px;
+    -webkit-transition: opacity 400ms ease-in-out;
+    transition: opacity 400ms ease-in-out;
+    line-height: 16px;
+
+
+
+    .page-link {
+      border: none;
+      color: #e15355;
+
+      &:hover,
+      &:active {
+        border: none;
+        opacity: 0.6;
+        color: #e15355;
+        background-color: transparent;
+
+      }
+
+
+
+
+    }
+
+  }
+
+  .page-item.active .page-link {
+    border-bottom: 1px solid #000;
+    opacity: 0.6;
+    background-color: transparent;
+    color: #e15355;
+  }
+
+
 }
