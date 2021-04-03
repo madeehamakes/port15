@@ -12,6 +12,7 @@
 
 
   .hero-contents-wrapper {
+    /* Icons will take available spacew ith margin auto */
     margin: auto;
 
     .hero-contents {
@@ -46,7 +47,7 @@
       }
 
 
-      .custom-button {
+      .hero-button {
         display: inline-block;
         text-align: center;
         vertical-align: middle;
@@ -54,18 +55,17 @@
         letter-spacing: 1.1px;
         text-decoration: none;
         text-transform: uppercase;
+
       }
 
-      .custom-button-red {
+      .hero-button.red {
         color: #fff;
         background-color: #e05355;
         border-bottom: 2px solid #e05355;
         margin-top: 24px;
       }
 
-      .custom-button:hover {
-        color: #fff;
-      }
+
 
 
     }
@@ -74,10 +74,6 @@
 
 
 }
-
-
-
-
 
 
 .icons-container {

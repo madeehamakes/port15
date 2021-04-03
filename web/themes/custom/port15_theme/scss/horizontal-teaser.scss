@@ -1,11 +1,49 @@
+/* Note: Horizontal Cards are used on the homepage for the portfolio items and then on the Work and Blog pages as the featured item.  */
+
 .Horizontal-Cards {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  /* mt-4 is used on each row which is like 24px so 40-24px is 16px;  */
+
+
+
+  /* To Do: Second Row Pagination block how to get correct margin */
+  .view-content>.views-row {
+    margin-top: 40px !important;
+  }
+
+
+  /* 
+  To add space below the more-link button target the wrapper rather than the entire horizontal cards div since this block is also used on the work and blog pages and does not have a more-link button.  */
+  .wrapper {
+    padding-bottom: 80px;
+  }
+
+  .card {
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsla(0, 0%, 46%, 0.3);
+
+    .title {
+      margin-bottom: 10px;
+    }
+
+    .tag {
+      color: #757575;
+      /* To Do: Make this variable*/
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 14px;
+      margin-top: 14px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+  }
 
   .more-link {
+    /* This button is 40px down from the rest of the content in the block */
     margin-top: 40px;
     border-bottom: 2px solid #2b4b5e;
     -webkit-transition: all 400ms ease-in-out;
@@ -40,29 +78,7 @@
   }
 
 
-  .card {
-    border-style: solid;
-    border-width: 1px;
-    border-color: hsla(0, 0%, 46%, 0.3);
-
-    .title {
-      margin-bottom: 10px;
-    }
-
-    .tag {
-      color: #757575;
-      /* To Do: Make this variable*/
-      text-transform: uppercase;
-      font-size: 14px;
-      line-height: 14px;
-      margin-top: 14px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-  }
-
-
+  /* In order to have alternating blocks where photo and text alternate use flex direction and target even elements */
   .view-content {
 
     .horizontal-card.views-row:nth-child(even) {
