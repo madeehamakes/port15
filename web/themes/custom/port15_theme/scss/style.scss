@@ -83,7 +83,7 @@ h4 {
 }
 
 .view-content {
-  padding-top: 40px;
+  /*   padding-top: 40px; */
 }
 
 /* MISC STYLES 
@@ -92,6 +92,7 @@ h4 {
 main#content.main-content.col {
   padding-left: 0px;
   padding-right: 0px;
+  margin-top: -16px;
 }
 
 body {
@@ -138,4 +139,8 @@ a {
 
 .slick>div {
   margin: 0 15px;
+}
+
+nav.tabs {
+  margin-bottom: 0px !important;
 }
