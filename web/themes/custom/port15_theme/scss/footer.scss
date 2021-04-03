@@ -2,7 +2,7 @@ footer.site-footer {
   background-color: $steel-blue !important;
   color: $white;
   padding-top: 20px;
-  padding-bottom: 0px;
+  padding-bottom: 8px;
 
   .container,
   .container-fluid {
@@ -10,8 +10,6 @@ footer.site-footer {
     padding-right: 0;
 
   }
-
-
 
   .site-footer__top {
     display: flex;
@@ -22,7 +20,7 @@ footer.site-footer {
       display: block;
       color: $white;
       margin-top: 18px;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
       font-size: 18px;
       line-height: 17px;
       letter-spacing: 1.3px;
@@ -73,6 +71,7 @@ footer.site-footer {
     .footer--byline {
       width: 100%;
       padding-top: 16px;
+      /*   padding-bottom: 16px; */
       color: hsla(0, 0%, 100%, 0.53);
       font-size: 12px;
 
