@@ -25,6 +25,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /blog
+    pages: "/blog\r\n/blogpage"
     negate: false
     context_mapping: {  }
