@@ -22,14 +22,14 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 1
+    weight: 0
     settings:
       trim_length: 600
     third_party_settings: {  }
     region: content
   field_author_url:
     type: link
-    weight: 3
+    weight: 2
     region: content
     label: hidden
     settings:
@@ -41,14 +41,14 @@ content:
     third_party_settings: {  }
   field_testimonial_author:
     type: string
-    weight: 2
+    weight: 1
     region: content
     label: visually_hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
   links:
-    weight: 0
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
