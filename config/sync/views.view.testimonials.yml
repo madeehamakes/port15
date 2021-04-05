@@ -55,8 +55,7 @@ display:
       style:
         type: default
         options:
-          grouping: {  }
-          row_class: ''
+          row_class: 'col-12 '
           default_row_class: true
           uses_fields: false
       row:
@@ -196,6 +195,7 @@ display:
       link_url: testimonials
       link_display: custom_url
       title: Testimonials
+      css_class: Testimonials
     cache_metadata:
       max-age: -1
       contexts:
