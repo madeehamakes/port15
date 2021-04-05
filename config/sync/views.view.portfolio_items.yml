@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
-    - core.entity_view_mode.node.teaser_vertical
+    - core.entity_view_mode.node.horizontal_cards
+    - core.entity_view_mode.node.vertical_cards
     - node.type.portfolio_item
   module:
     - node
@@ -63,7 +63,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: teaser
+          view_mode: horizontal_cards
       fields:
         title:
           id: title
@@ -270,14 +270,14 @@ display:
       style:
         type: default
         options:
-          row_class: 'col-sm-12 col-md-6  col-lg-4 mb-3'
+          row_class: 'col-sm-12 col-md-6  col-lg-4'
           default_row_class: true
           uses_fields: false
       row:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: teaser_vertical
+          view_mode: vertical_cards
       css_class: Vertical-Cards
       block_description: ''
     cache_metadata:
