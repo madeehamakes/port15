@@ -190,50 +190,6 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  block_2:
-    display_plugin: block
-    id: block_2
-    display_title: 'Featured Blog'
-    position: 1
-    display_options:
-      display_extenders: {  }
-      pager:
-        type: some
-        options:
-          items_per_page: 1
-          offset: 0
-      defaults:
-        pager: false
-        style: false
-        row: false
-        css_class: false
-        use_more: false
-        use_more_always: false
-        use_more_text: false
-      display_description: ''
-      style:
-        type: default
-        options:
-          row_class: 'col-12 horizontal-card'
-          default_row_class: true
-          uses_fields: false
-      row:
-        type: 'entity:node'
-        options:
-          relationship: none
-          view_mode: horizontal_cards
-      css_class: Horizontal-Cards
-      use_more: false
-      use_more_always: true
-      use_more_text: 'View All Blog Posts'
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      tags: {  }
   block_3:
     display_plugin: block
     id: block_3
@@ -296,6 +252,50 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  featured_blog:
+    display_plugin: block
+    id: featured_blog
+    display_title: 'Featured Blog'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      pager:
+        type: some
+        options:
+          items_per_page: 1
+          offset: 0
+      defaults:
+        pager: false
+        style: false
+        row: false
+        css_class: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+      display_description: ''
+      style:
+        type: default
+        options:
+          row_class: 'col-12 horizontal-card'
+          default_row_class: true
+          uses_fields: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: horizontal_cards
+      css_class: Horizontal-Cards
+      use_more: false
+      use_more_always: true
+      use_more_text: 'View All Blog Posts'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }

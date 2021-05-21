@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.portfolio_item.field_password
     - field.field.node.portfolio_item.field_rank_level
     - field.field.node.portfolio_item.field_subheading
+    - field.field.node.portfolio_item.field_tag
     - field.field.node.portfolio_item.field_thumbnail_image
     - image.style.thumbnail
     - node.type.portfolio_item
@@ -75,6 +76,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textarea
+    region: content
+  field_tag:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   field_thumbnail_image:
     weight: 9

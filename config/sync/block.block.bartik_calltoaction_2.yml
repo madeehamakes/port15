@@ -1,0 +1,26 @@
+uuid: ca058365-86ec-4380-9526-71fd4cba3e47
+langcode: en
+status: true
+dependencies:
+  module:
+    - port_core
+    - system
+  theme:
+    - bartik
+id: bartik_calltoaction_2
+theme: bartik
+region: content
+weight: 5
+provider: null
+plugin: port_core_call_to_action
+settings:
+  id: port_core_call_to_action
+  label: 'Call to Action'
+  provider: port_core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /about
+    negate: false
+    context_mapping: {  }

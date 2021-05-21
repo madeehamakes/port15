@@ -1,0 +1,30 @@
+uuid: ad021232-ef27-4c40-91fd-0b0e31dbfe88
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.blog_posts
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: bartik_views_block__blog_posts_block_2
+theme: bartik
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:blog_posts-block_2'
+settings:
+  id: 'views_block:blog_posts-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/blog\r\n/blogpage"
+    negate: false
+    context_mapping: {  }

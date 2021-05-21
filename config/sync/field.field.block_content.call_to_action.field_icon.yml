@@ -1,0 +1,21 @@
+uuid: 97c3d762-1ffc-496d-9d1d-d4351631f19e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.call_to_action
+    - field.storage.block_content.field_icon
+  module:
+    - fontawesome
+id: block_content.call_to_action.field_icon
+field_name: field_icon
+entity_type: block_content
+bundle: call_to_action
+label: icon
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: fontawesome_icon

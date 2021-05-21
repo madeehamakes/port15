@@ -1,0 +1,30 @@
+uuid: 9ae22bea-140c-47d6-8ee4-4118243f866e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.portfolio_items
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: bartik_views_block__portfolio_items_block_3
+theme: bartik
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:portfolio_items-block_3'
+settings:
+  id: 'views_block:portfolio_items-block_3'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /work
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,15 @@
+uuid: 85026981-f987-446f-93b3-5e2da55450ce
+langcode: en
+status: true
+dependencies: {  }
+name: logo_48_48_
+label: 'Logo (48×48)'
+effects:
+  0379951d-a66d-47ed-8b67-615865bc4e1b:
+    uuid: 0379951d-a66d-47ed-8b67-615865bc4e1b
+    id: image_scale
+    weight: -10
+    data:
+      width: 48
+      height: 48
+      upscale: false

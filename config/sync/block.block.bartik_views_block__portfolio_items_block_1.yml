@@ -1,26 +1,22 @@
-uuid: c788fabe-3a83-4e72-b688-5e646560051b
+uuid: 3dcaa346-6501-4913-9192-8d5fddb6f0dc
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.blog_posts
+    - views.view.portfolio_items
   module:
-    - block_class
     - system
     - views
   theme:
-    - port15_theme
-third_party_settings:
-  block_class:
-    classes: PitchPerfect
-id: views_block__blog_posts_block_1
-theme: port15_theme
+    - bartik
+id: bartik_views_block__portfolio_items_block_1
+theme: bartik
 region: content
-weight: -3
+weight: -8
 provider: null
-plugin: 'views_block:blog_posts-block_1'
+plugin: 'views_block:portfolio_items-block_1'
 settings:
-  id: 'views_block:blog_posts-block_1'
+  id: 'views_block:portfolio_items-block_1'
   label: ''
   provider: views
   label_display: visible

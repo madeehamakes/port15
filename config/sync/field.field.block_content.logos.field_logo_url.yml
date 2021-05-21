@@ -1,0 +1,23 @@
+uuid: a57dd809-0af2-4702-bb30-2b7a044ec1ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.logos
+    - field.storage.block_content.field_logo_url
+  module:
+    - link
+id: block_content.logos.field_logo_url
+field_name: field_logo_url
+entity_type: block_content
+bundle: logos
+label: logo_url
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

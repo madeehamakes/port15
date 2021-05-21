@@ -1,0 +1,54 @@
+uuid: 9280257d-7e29-4ddb-85ea-64df22cabbdf
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.half_and_half
+    - field.field.block_content.half_and_half.body
+    - field.field.block_content.half_and_half.field_half_and_half_button
+    - field.field.block_content.half_and_half.field_half_half_image
+    - image.style.thumbnail
+  module:
+    - image
+    - link
+    - text
+id: block_content.half_and_half.default
+targetEntityType: block_content
+bundle: half_and_half
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  field_half_and_half_button:
+    weight: 27
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_half_half_image:
+    weight: 28
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

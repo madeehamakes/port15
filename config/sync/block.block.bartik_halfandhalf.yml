@@ -1,0 +1,26 @@
+uuid: 3db127f5-a5c4-4ddd-9ef0-c7f0ab719cd2
+langcode: en
+status: true
+dependencies:
+  module:
+    - port_core
+    - system
+  theme:
+    - bartik
+id: bartik_halfandhalf
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: port_core_half_and_half
+settings:
+  id: port_core_half_and_half
+  label: 'Half and Half'
+  provider: port_core
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

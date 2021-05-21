@@ -1,0 +1,8 @@
+uuid: 54a984ff-e92d-4635-807e-3e8c2251bf6b
+langcode: en
+status: true
+dependencies: {  }
+id: half_and_half
+label: 'Half and Half'
+revision: 0
+description: 'Display content side by side, each with a width of 50%'

@@ -1,0 +1,20 @@
+uuid: 95ac4fbf-140a-4d34-8321-d5c9ea195261
+langcode: en
+status: true
+dependencies:
+  module:
+    - port_core
+  theme:
+    - bartik
+id: bartik_footercopyright
+theme: bartik
+region: footer_fifth
+weight: -7
+provider: null
+plugin: port_core_footer_copyright
+settings:
+  id: port_core_footer_copyright
+  label: Footer-Copyright
+  provider: port_core
+  label_display: visible
+visibility: {  }

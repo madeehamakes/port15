@@ -1,0 +1,26 @@
+uuid: 867003b5-eb32-48d9-be53-14da0944aafe
+langcode: en
+status: true
+dependencies:
+  module:
+    - port_core
+    - system
+  theme:
+    - bartik
+id: bartik_halfandhalfwform
+theme: bartik
+region: content
+weight: 6
+provider: null
+plugin: port_core_halfandhalfwform
+settings:
+  id: port_core_halfandhalfwform
+  label: HalfandHalfwForm
+  provider: port_core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /connect
+    negate: false
+    context_mapping: {  }

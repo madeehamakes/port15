@@ -1,4 +1,4 @@
-uuid: c788fabe-3a83-4e72-b688-5e646560051b
+uuid: e7aea352-996f-4177-9380-03cdbe50bd4a
 langcode: en
 status: true
 dependencies:
@@ -9,12 +9,12 @@ dependencies:
     - system
     - views
   theme:
-    - port15_theme
+    - bartik
 third_party_settings:
   block_class:
     classes: PitchPerfect
-id: views_block__blog_posts_block_1
-theme: port15_theme
+id: bartik_views_block__blog_posts_block_1
+theme: bartik
 region: content
 weight: -3
 provider: null

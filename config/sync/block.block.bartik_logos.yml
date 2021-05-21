@@ -1,0 +1,26 @@
+uuid: b2552a9f-7e64-4c9b-bfe7-f1860a747d80
+langcode: en
+status: true
+dependencies:
+  module:
+    - port_core
+    - system
+  theme:
+    - bartik
+id: bartik_logos
+theme: bartik
+region: content
+weight: 2
+provider: null
+plugin: port_core_logos
+settings:
+  id: port_core_logos
+  label: Logos
+  provider: port_core
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /about
+    negate: false
+    context_mapping: {  }

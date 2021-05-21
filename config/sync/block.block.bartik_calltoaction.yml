@@ -1,0 +1,26 @@
+uuid: c975d64b-c87b-40a3-a2e5-6d7db4957de5
+langcode: en
+status: true
+dependencies:
+  module:
+    - port_core
+    - system
+  theme:
+    - bartik
+id: bartik_calltoaction
+theme: bartik
+region: content
+weight: -4
+provider: null
+plugin: port_core_call_to_action
+settings:
+  id: port_core_call_to_action
+  label: 'Call to Action'
+  provider: port_core
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/faq"
+    negate: false
+    context_mapping: {  }

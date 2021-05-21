@@ -10,7 +10,7 @@ dependencies:
     - node
     - user
 id: portfolio_items
-label: 'Portfolio Items'
+label: Portfolio
 module: views
 description: ''
 tag: ''
@@ -178,7 +178,7 @@ display:
   block_1:
     display_plugin: block
     id: block_1
-    display_title: 'Recent Projects'
+    display_title: 'Portfolio - 3'
     position: 1
     display_options:
       display_extenders: {  }
@@ -197,7 +197,7 @@ display:
   block_2:
     display_plugin: block
     id: block_2
-    display_title: 'Featured Project'
+    display_title: 'Portfolio - Featured Project'
     position: 1
     display_options:
       display_extenders: {  }
@@ -224,7 +224,7 @@ display:
   block_3:
     display_plugin: block
     id: block_3
-    display_title: 'Projects Pagination'
+    display_title: 'Portfolio Pagination'
     position: 1
     display_options:
       display_extenders: {  }

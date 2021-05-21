@@ -1,0 +1,26 @@
+uuid: 6f67f3d8-2dc0-47a5-b5d4-79208ad82310
+langcode: en
+status: true
+dependencies:
+  module:
+    - port_core
+    - system
+  theme:
+    - bartik
+id: bartik_hero
+theme: bartik
+region: featured_top
+weight: 0
+provider: null
+plugin: port_core_hero
+settings:
+  id: port_core_hero
+  label: Hero
+  provider: port_core
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

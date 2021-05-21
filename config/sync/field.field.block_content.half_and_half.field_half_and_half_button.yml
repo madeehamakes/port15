@@ -1,0 +1,23 @@
+uuid: 52c08efa-03e5-4ad5-9ffa-c79748d73cb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.half_and_half
+    - field.storage.block_content.field_half_and_half_button
+  module:
+    - link
+id: block_content.half_and_half.field_half_and_half_button
+field_name: field_half_and_half_button
+entity_type: block_content
+bundle: half_and_half
+label: 'Half and Half Button'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link
