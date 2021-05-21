@@ -23,11 +23,16 @@
         "drupal/core-dev": "^8.9",
         "drupal/core-project-message": "^8.9",
         "drupal/core-recommended": "^8.9",
+        "drupal/devel": "^4.1",
         "drupal/entity_clone": "^1.0@beta",
+        "drupal/fontawesome": "^2.18",
+        "drupal/layout_builder_component_attributes": "^1.2",
         "drupal/line_awesome": "^1.0",
+        "drupal/twig_tweak": "2.9",
         "drush/drush": "^10.0"
     },
     "require-dev": {
+        "kint-php/kint": "^3.3"
     },
     "conflict": {
         "drupal/drupal": "*"
