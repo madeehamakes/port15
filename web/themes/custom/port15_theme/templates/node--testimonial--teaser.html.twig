@@ -60,48 +60,90 @@
  */
 #}
 
+{{ attach_library('bootstrap_barrio/node') }}
 
-<div class="node-testimonial-teaser d-flex align-items-start justify-content-start">
+{%
+  set classes = [
+    'node',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+    'clearfix',
+  ]
+%}
 
-
-  <div class="cta-icon testimonial">
-    <!-- To Do: Decide on line awesome or font awesome. Placeholder icon -->
-    <span> <i class="lab la-drupal"></i></span>
-  </div>
-  <div>
-
-
-    <h3>{{ label }}</h3>
-    {{ content.body }}
-    <div class="testimonialAuthor-container">
-
-      {% if not (node.field_testimonial_author.isEmpty or node.field_author_url.isEmpty) %}
-
-
-      <div class="testimonialAuthor d-flex">
-        <div class="name"> {{ content.field_testimonial_author }} </div>
-        <div> |</div>
-
-        <div class="link">{{ content.field_author_url }} </div>
-      </div>
-      {% elseif not (node.field_testimonial_author.isEmpty and node.field_author_url.isEmpty) %}
-      <div class="testimonialAuthor d-flex">
-        <div class="name"> {{ content.field_testimonial_author }}</div>
-        <div class="link"> {{ content.field_author_url }}</div>
-      </div>
-      {% else %}
-      <span class="testimonialAuthor_none">
-      </span>
-
-
-
-
+<article{{ attributes.addClass(classes) }}>
+  <header>
+    {#  {{ title_prefix }}  
+      {#   {% if label and not page %}
+    <h2{{ title_attributes.addClass('node__title') }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      </h2>
       {% endif %}
-    </div>
+      {{ title_suffix }}
+      {% if display_submitted %}
+      <div class="node__meta">
+        {{ author_picture }}
+        {% block submitted %}
+        <em{{ author_attributes }}>
+          {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+          </em>
+          {% endblock %}
+          {{ metadata }}
+      </div>
+      {% endif %}
+  </header>
+  #}
+    <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
 
 
-  </div>
+
+      <div class="node-testimonial-teaser d-flex align-items-start justify-content-start">
+
+
+        <div class="cta-icon testimonial">
+          <!-- To Do: Decide on line awesome or font awesome. Placeholder icon -->
+          <span> <i class="fas fa-quote-left"></i></span>
+        </div>
+        <div>
+
+
+          <h3>{{ label }}</h3>
+          {{ content.body }}
+          <div class="testimonialAuthor-container">
 
 
 
-</div>
+
+
+            <div class="testimonialAuthor d-flex">
+
+
+
+              <div class="name"> {{ content.field_testimonial_author }} </div>
+
+
+              {% if  content.field_author_url[0] is not empty  %}
+              {{ content.field_author_url }}
+              {% endif %}
+
+
+            </div>
+
+
+
+          </div>
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+      </div>
+      </article>
