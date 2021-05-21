@@ -1,20 +1,64 @@
 .logos-container {
   background-color: #307c8b;
 
-  .logo-wrapper {
+
+
+  .field__items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .field__item {
     max-height: 150px;
     padding: 24px;
+    /*     width: 20%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+    img {
+      display: inline-block;
+      /*   max-width: 48px; */
+      vertical-align: middle;
+
+    }
+
   }
 
-  .logo-column {
+  /*  .logo-wrapper {
+    max-height: 150px;
+    padding: 24px;
+  } */
+
+  /* .logo-column {
     width: 20%;
+  } */
+
+
+  /* 
+  .logo-img {
+    /*     max-height: 48px; */
+  /* display: inline-block; */
+  /*     max-width: 100%; */
+  /*  max-width: 48px;
+    vertical-align: middle; */
+  /* }  */
+
+
+
+}
+
+
+@media (min-width: 35rem) {
+
+  .node .logos-container .field--type-image {
+    float: none !important;
+    margin: 0 1rem 0 0;
+
   }
 
-  .logo-img {
-    max-height: 48px;
-    display: inline-block;
-    max-width: 100%;
-    vertical-align: middle;
-  }
+
 
 }
