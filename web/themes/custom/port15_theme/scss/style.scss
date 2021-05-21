@@ -144,3 +144,20 @@ a {
 nav.tabs {
   margin-bottom: 0px !important;
 }
+
+
+/* Some Overrides in Drupal  */
+/* TO DO: This needs to be moved to haalf and half block */
+/* Drupal by default will hardcode the height and width, so use height auto to make height flexible and width of 100% to take full container */
+img {
+  height: auto;
+  width: 100%;
+
+}
+
+/* Allow image to go full width */
+.node .field--type-image {
+
+  margin: 0;
+
+}
