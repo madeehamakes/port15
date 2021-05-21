@@ -45,7 +45,11 @@ To Do: Make this block reusable so that different blocks using this template can
 <div{{ attributes.addClass(classes).addClass('cta-wrapper')}}>
   {{ title_prefix }} {{ title_suffix }}
   <div class="container">
-    <div class="wrapper d-flex flex-wrap align-items-center justify-content-between">
+
+
+    {% block content %}
+
+    <div {{ content_attributes.addClass('wrapper d-flex flex-wrap align-items-center justify-content-between') }}>
       <div class="d-flex">
         <div class="icon-wrapper">
           <div class="d-flex align-items-center justify-content-center">
@@ -69,6 +73,8 @@ To Do: Make this block reusable so that different blocks using this template can
           <div>{{content.field_button.0['#title']}}</div>
         </a>
       </div>
+
+      {% endblock %}
     </div>
   </div>
   </div>
