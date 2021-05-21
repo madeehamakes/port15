@@ -2,6 +2,14 @@
 To Do: Determine how to add different color background to blog section
  */
 
+.Blog-Articles {
+  background-color: #2f7c8b;
+
+  h2 {
+    color: #fff;
+  }
+}
+
 
 #block-views-block-blog-posts-block-1 {
   background-color: #2f7c8b;
@@ -22,7 +30,37 @@ To Do: Determine how to add different color background to blog section
 
 
 
+
+div.block.block-views.block-views-blockblog-posts-featured-blog {
+  background-color: #2b4b5e;
+  padding-bottom: 42px;
+
+
+  .title__wrapper {
+
+    h1 {
+      color: #fff;
+      text-align: center
+    }
+
+
+  }
+}
+
+
+
+
+
 .block-views-blockportfolio-items-block-1 {
   background-color: hsla(0, 0%, 46%, 0.12);
 
+}
+
+
+
+/* For the Blog Page, the title is disabled and the block title is styled to be like the page title. To make it consistent with the page titles on the other pages, you need to remove the margin top from node__content (Which is the wrapping div for all the page content on a page) */
+
+[about|="/node/38"] .node__content {
+  background: yellow;
+  margin-top: 0px !important;
 }
