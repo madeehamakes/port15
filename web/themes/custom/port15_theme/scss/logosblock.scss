@@ -1,17 +1,16 @@
 .logos-container {
-  background-color: #307c8b;
+  background-color: $teal;
 
 
 
   .field__items {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .field__item {
     max-height: 150px;
     padding: 24px;
-    /*     width: 20%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,31 +19,13 @@
 
     img {
       display: inline-block;
-      /*   max-width: 48px; */
       vertical-align: middle;
 
     }
 
   }
 
-  /*  .logo-wrapper {
-    max-height: 150px;
-    padding: 24px;
-  } */
 
-  /* .logo-column {
-    width: 20%;
-  } */
-
-
-  /* 
-  .logo-img {
-    /*     max-height: 48px; */
-  /* display: inline-block; */
-  /*     max-width: 100%; */
-  /*  max-width: 48px;
-    vertical-align: middle; */
-  /* }  */
 
 
 

@@ -13,15 +13,15 @@
 
   .more-link {
     margin-top: 40px;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid $white;
     -webkit-transition: all 400ms ease-in-out;
     transition: all 400ms ease-in-out;
-    background-color: #fff;
+    background-color: $white;
     display: flex;
     justify-content: center;
     flex-direction: column;
     height: 50px;
-    color: #2b4b5e;
+    color: $steel-blue;
 
     &:hover {
       background-color: transparent;
@@ -31,14 +31,13 @@
       letter-spacing: 1.1px;
       text-decoration: none;
       text-transform: uppercase;
-      color: #2b4b5e;
+      color: $steel-blue;
       margin-bottom: auto;
       flex-grow: 1;
-      /* Add padding to link element due to flexbox */
       padding: 14px 20px 12px;
 
       &:hover {
-        color: #fff;
+        color: $white;
       }
 
     }
@@ -58,9 +57,9 @@
       padding: 0px !important;
     }
 
-    .tag {
+    .tag a {
 
-      color: #757575;
+      color: $grey;
       /* To Do: Make this variable*/
       text-transform: uppercase;
       font-size: 14px;

@@ -41,25 +41,39 @@ footer.site-footer {
     }
 
     .region-footer-second {
-      text-align: right;
 
-      .social-icon-wrapper {
 
-        a {
-          margin-left: 8px;
-          transition: opacity 400ms ease-in-out;
-          color: $white !important;
 
-          &:hover {
-            opacity: 0.5;
+      #block-iconsinthefooter {
+
+
+        .field__items {
+          display: flex;
+          justify-content: flex-end;
+
+          .field__item {
+            a {
+              margin-left: 8px;
+              transition: opacity 400ms ease-in-out;
+              color: $white;
+              font-size: 26px;
+
+              &:hover {
+                opacity: 0.5;
+              }
+
+            }
+
+
           }
-
 
         }
 
-
-
       }
+
+
+
+
 
 
     }
@@ -71,7 +85,6 @@ footer.site-footer {
     .footer--byline {
       width: 100%;
       padding-top: 16px;
-      /*   padding-bottom: 16px; */
       color: hsla(0, 0%, 100%, 0.53);
       font-size: 12px;
 

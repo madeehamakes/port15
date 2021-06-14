@@ -36,8 +36,8 @@
       margin-bottom: 10px;
     }
 
-    .tag {
-      color: #757575;
+    .tag a {
+      color: $grey;
       /* To Do: Make this variable*/
       text-transform: uppercase;
       font-size: 14px;
@@ -56,7 +56,7 @@
     -webkit-transition: all 400ms ease-in-out;
     transition: all 400ms ease-in-out;
     color: #fff;
-    background-color: #2b4b5e;
+    background-color: $steel-blue;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -77,7 +77,7 @@
       padding: 14px 20px 12px;
 
       &:hover {
-        color: #2b4b5e;
+        color: $steel-blue;
       }
 
     }
@@ -88,7 +88,7 @@
   /* In order to have alternating blocks where photo and text alternate use flex direction and target even elements */
   .view-content {
 
-    .horizontal-card.views-row:nth-child(even) {
+    .horizontal-card:nth-child(even) {
       .card {
         .row {
           flex-direction: row-reverse;

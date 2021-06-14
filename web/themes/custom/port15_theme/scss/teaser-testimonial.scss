@@ -12,7 +12,7 @@
 
   .testimonial span {
     display: block;
-    color: #e15255;
+    color: $red;
     font-size: 32px;
     line-height: 32px;
   }
@@ -65,11 +65,11 @@
 
   .more-link {
     margin-top: 40px;
-    border-bottom: 2px solid #e05355;
+    border-bottom: 2px solid $red;
     -webkit-transition: all 400ms ease-in-out;
     transition: all 400ms ease-in-out;
     color: #fff;
-    background-color: #e05355;
+    background-color: $red;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -90,7 +90,7 @@
       padding: 14px 20px 12px;
 
       &:hover {
-        color: #e05355;
+        color: $red;
       }
 
     }

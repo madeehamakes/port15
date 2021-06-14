@@ -2,8 +2,8 @@
   padding-top: 24px;
   padding-bottom: 24px;
   background-color: #d65256;
-  background-image: -webkit-gradient(linear, right top, left top, from(#c52845), to(#e15355));
-  background-image: linear-gradient(270deg, #c52845, #e15355);
+  background-image: -webkit-gradient(linear, right top, left top, from($deep-red), to($red));
+  background-image: linear-gradient(270deg, $deep-red, $red);
   padding-left: 10px;
   padding-right: 10px;
 
@@ -14,7 +14,7 @@
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: $white;
   }
 
 
@@ -25,11 +25,11 @@
   .content {
     max-width: 600px;
     padding-right: 24px;
-    color: #fff;
+    color: $white;
   }
 
   .content h2 {
-    color: #fff;
+    color: $white;
   }
 
   /*   //On smaller screens the text and the icon line up on different lines */

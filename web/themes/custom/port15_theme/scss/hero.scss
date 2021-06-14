@@ -6,9 +6,22 @@
   background-size: cover;
   -o-background-size: cover;
   min-height: 90vh;
-  color: white;
+  color: $white;
   align-items: center;
   position: relative;
+
+
+
+
+  /* NEW 6/14 */
+  .fontawesome-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    font-size: 6vw;
+    padding-top: 0px;
+    display: flex;
+  }
 
 
   .hero-contents-wrapper {
@@ -21,7 +34,7 @@
 
 
       .hero-h1 {
-        color: #fff;
+        color: $white;
         font-size: 60px;
         line-height: 64px;
         margin-bottom: 10px;
@@ -38,8 +51,8 @@
 
 
 
-      .hero-lead {
-        color: #fff;
+      .field--name-field-hero {
+        color: $white;
         font-size: 22px;
         line-height: 28px;
 
@@ -47,23 +60,15 @@
       }
 
 
-      .hero-button {
-        display: inline-block;
-        text-align: center;
-        vertical-align: middle;
-        padding: 14px 20px 12px;
-        letter-spacing: 1.1px;
-        text-decoration: none;
-        text-transform: uppercase;
+      a.button.red-btn.hero {
 
-      }
-
-      .hero-button.red {
-        color: #fff;
-        background-color: #e05355;
-        border-bottom: 2px solid #e05355;
         margin-top: 24px;
       }
+
+
+
+
+
 
 
 
@@ -75,14 +80,6 @@
 
 }
 
-
-.icons-container {
-
-  font-size: 6vw;
-  padding-top: 0px;
-  display: flex;
-
-}
 
 
 

@@ -4,7 +4,7 @@
   background-color: #1d1d1d;
   -webkit-transition: all 400ms ease-in-out;
   transition: all 400ms ease-in-out;
-  color: #fff;
+  color: $white;
   max-width: 100%;
   display: inline-block;
   letter-spacing: 1.1px;
@@ -15,7 +15,7 @@
 .white-btn {
   border-bottom-color: #fff;
   background-color: #fff;
-  color: #2a4b5e;
+  color: $steel-blue;
 }
 
 .white-btn:hover {
@@ -25,20 +25,20 @@
 }
 
 .steel-blue-btn {
-  border-bottom-color: #2b4b5e;
-  background-color: #2b4b5e;
+  border-bottom-color: $steel-blue;
+  background-color: $steel-blue;
 }
 
 .steel-blue-btn:hover {
   background-color: transparent;
-  color: #41708b;
+  color: $teal;
   text-decoration: none;
 }
 
 .link-btn {
   border-bottom-color: #b9b59d;
-  color: #e05355;
-  background-color: #fff;
+  color: $red;
+  background-color: $white;
 }
 
 .secondary {
@@ -50,17 +50,17 @@
 .link-btn:hover {
   border-bottom-color: transparent;
   text-decoration: none;
-  color: #e05355;
+  color: $red;
 }
 
 .red-btn {
-  border-bottom-color: #e05355;
-  background-color: #e05355;
-  color: #fff;
+  border-bottom-color: $red;
+  background-color: $red;
+  color: $white;
 }
 
 .red-btn:hover {
   background-color: transparent;
-  color: #e05355;
+  color: $red;
   text-decoration: none;
 }

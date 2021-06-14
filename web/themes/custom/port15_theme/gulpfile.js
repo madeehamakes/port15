@@ -8,16 +8,16 @@ let gulp = require('gulp'),
   autoprefixer = require('autoprefixer'),
   postcssInlineSvg = require('postcss-inline-svg'),
   browserSync = require('browser-sync').create()
-  pxtorem = require('postcss-pxtorem'),
-	postcssProcessors = [
-		postcssInlineSvg({
+pxtorem = require('postcss-pxtorem'),
+  postcssProcessors = [
+    postcssInlineSvg({
       removeFill: true,
       paths: ['./node_modules/bootstrap-icons/icons']
     }),
-		pxtorem({
-			propList: ['font', 'font-size', 'line-height', 'letter-spacing', '*margin*', '*padding*'],
-			mediaQuery: true
-		})
+    pxtorem({
+      propList: ['font', 'font-size', 'line-height', 'letter-spacing', '*margin*', '*padding*'],
+      mediaQuery: true
+    })
   ];
 
 const paths = {
@@ -38,7 +38,7 @@ const paths = {
 }
 
 // Compile sass into CSS & auto-inject into browsers
-function styles () {
+function styles() {
   return gulp.src([paths.scss.bootstrap, paths.scss.src])
     .pipe(sourcemaps.init())
     .pipe(sass({
@@ -58,25 +58,28 @@ function styles () {
         'Safari >= 8',
         'Android 2.3',
         'Android >= 4',
-        'Opera >= 12']
+        'Opera >= 12'
+      ]
     })]))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(paths.scss.dest))
     .pipe(cleanCss())
-    .pipe(rename({ suffix: '.min' }))
+    .pipe(rename({
+      suffix: '.min'
+    }))
     .pipe(gulp.dest(paths.scss.dest))
     .pipe(browserSync.stream())
 }
 
 // Move the javascript files into our js folder
-function js () {
+function js() {
   return gulp.src([paths.js.bootstrap, paths.js.jquery, paths.js.popper, paths.js.poppermap, paths.js.barrio])
     .pipe(gulp.dest(paths.js.dest))
     .pipe(browserSync.stream())
 }
 
 // Static Server + watching scss/html files
-function serve () {
+function serve() {
   browserSync.init({
     proxy: 'http://yourdomain.com',
   })

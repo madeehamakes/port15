@@ -84,9 +84,12 @@
               {{ content.body }}
             </p>
 
+
+            {% if content.field_half_and_half_button[0] %}
             <a href="{{ content.field_half_and_half_button[0]['#url'] }}" class="button red-btn">
               <div>{{ content.field_half_and_half_button[0]['#title'] }}</div>
             </a>
+            {% endif %}
 
         </div>
       </div>

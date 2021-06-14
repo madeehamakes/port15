@@ -1,0 +1,84 @@
+.send-me-note-block {
+
+  padding: 24px;
+  background-color: $steel-blue;
+  background-image: linear-gradient(139deg, $teal, $steel-blue);
+  color: $white !important;
+
+
+
+  h2 {
+    margin-top: 20px;
+    line-height: 36px;
+    text-transform: capitalize;
+    color: $white !important;
+
+  }
+
+  p {
+    color: $white;
+  }
+
+
+}
+
+
+.send-me-note {
+
+  label {
+
+    margin-bottom: 5px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+
+  }
+
+  button {
+    border: none;
+    text-transform: capitalize;
+  }
+
+
+  button#edit-actions-submit {
+    padding: 14px 20px 12px;
+    border-bottom: 2px solid #1d1d1d;
+    background-color: #1d1d1d;
+    -webkit-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+    color: $white;
+    max-width: 100%;
+    display: inline-block;
+    letter-spacing: 1.1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom-color: $red;
+    background-color: $red;
+    color: $white;
+
+
+    &:hover {
+      background-color: transparent;
+      color: $red;
+      text-decoration: none;
+    }
+
+  }
+
+
+
+
+
+}
+
+
+
+.send-me-note-confirmation.webform-confirmation {
+
+  padding: 20px;
+  text-align: center;
+  background-color: #dddddd;
+  color: #000;
+
+}

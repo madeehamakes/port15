@@ -29,13 +29,13 @@ nav {
 
     .page-link {
       border: none;
-      color: #e15355;
+      color: $red;
 
       &:hover,
       &:active {
         border: none;
         opacity: 0.6;
-        color: #e15355;
+        color: $red;
         background-color: transparent;
 
       }
@@ -51,7 +51,7 @@ nav {
     border-bottom: 1px solid #000;
     opacity: 0.6;
     background-color: transparent;
-    color: #e15355;
+    color: $red;
   }
 
 

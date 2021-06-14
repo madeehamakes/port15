@@ -1,19 +1,8 @@
-/* Note: These are just temporary styles to add background colors to the designated sections. 
-To Do: Determine how to add different color background to blog section
- */
+/* On the homepage put a green background for blog articles */
 
-.Blog-Articles {
+.block-views-blockblog-posts-recent-blog-articles {
   background-color: #2f7c8b;
 
-  h2 {
-    color: #fff;
-  }
-}
-
-
-#block-views-block-blog-posts-block-1 {
-  background-color: #2f7c8b;
-  /*  padding-top: 70px; */
 
   .section__wrapper {
     h2 {
@@ -29,38 +18,40 @@ To Do: Determine how to add different color background to blog section
 }
 
 
-
+/* 
 
 div.block.block-views.block-views-blockblog-posts-featured-blog {
-  background-color: #2b4b5e;
+  background-color: $steel-blue;
   padding-bottom: 42px;
 
 
   .title__wrapper {
 
     h1 {
-      color: #fff;
+      color: $white;
       text-align: center
     }
 
 
   }
-}
+} */
 
 
 
+/* On Homepage Put a grey background color for recent projects */
 
-
-.block-views-blockportfolio-items-block-1 {
+.block-views-blockportfolio-items-portfolio-recent-projects {
   background-color: hsla(0, 0%, 46%, 0.12);
 
 }
 
 
 
+
+
 /* For the Blog Page, the title is disabled and the block title is styled to be like the page title. To make it consistent with the page titles on the other pages, you need to remove the margin top from node__content (Which is the wrapping div for all the page content on a page) */
 
-[about|="/node/38"] .node__content {
-  background: yellow;
+/* [about|="/node/38"] .node__content {
+
   margin-top: 0px !important;
-}
+} */

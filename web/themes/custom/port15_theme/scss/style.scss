@@ -69,22 +69,14 @@ h4 {
 
 /* VIEWS STYLES 
 ------------------------*/
-.node--view-mode-teaser {
-  border-bottom: 1px solid #dee2e6;
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 15px;
-  padding-right: 15px;
-}
+
 
 .node--view-mode-teaser h2 {
   color: $dark-grey;
   font-size: 1.1em;
 }
 
-.view-content {
-  /*   padding-top: 40px; */
-}
+
 
 /* MISC STYLES 
 --------------------------------------------------*/
@@ -146,16 +138,12 @@ nav.tabs {
 }
 
 
-/* Some Overrides in Drupal  */
-/* TO DO: This needs to be moved to haalf and half block */
-/* Drupal by default will hardcode the height and width, so use height auto to make height flexible and width of 100% to take full container */
 img {
   height: auto;
   width: 100%;
 
 }
 
-/* Allow image to go full width */
 .node .field--type-image {
 
   margin: 0;

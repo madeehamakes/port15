@@ -19,12 +19,12 @@
         }
 
         h3:hover {
-          color: #e25255;
+          color: $red;
         }
 
         span {
           .toggle-icon {
-            color: red;
+            color: $red;
             font-size: 25px;
           }
 
@@ -49,6 +49,91 @@
 
 
   }
+
+
+
+}
+
+
+// New Styles  
+
+
+
+#views-bootstrap-faq-faq-accordion {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 100%;
+
+  //for full width ~byNirav
+  /*   width: 100%; */
+
+  .card {
+    border: none;
+
+
+
+    .class-header {
+      background-color: initial;
+      border: none;
+      padding: 0px;
+
+      h3 {
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid hsla(0, 0%, 46%, 0.5);
+        transition: all 400ms ease-in-out;
+
+
+        /*  //for full width ~byNirav
+        button {
+          width: 100%;
+          text-align: left;
+        } */
+
+        /*     make btn styles match h3 heading */
+        .btn {
+          font-size: 24px;
+          line-height: 30px;
+          font-weight: bold;
+
+          &:hover {
+            color: $red;
+          }
+
+        }
+
+
+
+        button[aria-expanded="true"]:before {
+          color: $red;
+          content: "\2212";
+        }
+
+        button[aria-expanded="false"]:before {
+          color: $red;
+          content: "\2b";
+        }
+
+      }
+
+      h3:hover {
+        color: #e25255;
+      }
+
+
+    }
+
+    .collapse {
+      .card-body {}
+    }
+
+
+
+
+
+
+  }
+
 
 
 
