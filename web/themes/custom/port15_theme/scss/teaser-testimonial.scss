@@ -18,8 +18,9 @@
   }
 
 
+  /*   .node-testimonial-teaser */
 
-  .node-testimonial-teaser {
+  .testimonial-item {
     margin-bottom: 20px;
     padding-bottom: 10px;
     border-bottom: 1px solid #e0e0e0;
@@ -33,20 +34,40 @@
       font-size: 14px;
       text-transform: uppercase;
 
-      a {
+
+
+      .name {
+
+
+        .field--name-field-testimonial-author {
+
+          .field__item {
+            color: $grey;
+            font-weight: bold;
+            font-size: 14px;
+            text-transform: uppercase;
+            padding-right: 5px;
+
+
+          }
+
+
+
+        }
+
+
+      }
+
+      .field--name-field-author-url a {
         color: $red;
       }
 
-      .name {
-        padding-right: 5px;
-      }
+      .field--name-field-author-url ::before {
 
-
-      .field--name-field-author-url::before {
         content: '  |  ';
-
-
       }
+
+
 
 
     }

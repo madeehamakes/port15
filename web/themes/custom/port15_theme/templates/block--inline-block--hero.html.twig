@@ -31,7 +31,6 @@
 #}
 
 
-{{ content.field_image_hero.0 }}
 {%
   set classes = [
     'block',
@@ -39,9 +38,9 @@
     'block-' ~ plugin_id|clean_class,
   ]
 %}
-<div{{ attributes.addClass(classes, "hero-wrapper d-flex flex-column justify-content-between align-items-center") }}>
-
-
+<div
+  style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.74), rgba(43, 75, 94, 0.85)), url('{{ content.field_image_hero.0['#markup']}}');"
+  {{ attributes.addClass(classes, "hero-wrapper d-flex flex-column justify-content-between align-items-center") }}>
 
   <div class="container hero-contents-wrapper">
     <div class="hero-contents">
@@ -87,4 +86,4 @@
 
 
 
-  </div>
+</div>
