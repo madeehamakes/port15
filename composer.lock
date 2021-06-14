@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "84069edfabf67cd187f055e2b9ea83b5",
+    "content-hash": "95411dce298758771bb2960cf490487b",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2879,58 +2879,6 @@
             }
         },
         {
-            "name": "drupal/entity_clone",
-            "version": "1.0.0-beta6",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/entity_clone.git",
-                "reference": "8.x-1.0-beta6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_clone-8.x-1.0-beta6.zip",
-                "reference": "8.x-1.0-beta6",
-                "shasum": "35d04649b6fb349df761abab37506a94f172981f"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.0-beta6",
-                    "datestamp": "1617209997",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "NickDickinsonWilde",
-                    "homepage": "https://www.drupal.org/user/3094661"
-                },
-                {
-                    "name": "colan",
-                    "homepage": "https://www.drupal.org/user/58704"
-                },
-                {
-                    "name": "vpeltot",
-                    "homepage": "https://www.drupal.org/user/1361586"
-                }
-            ],
-            "description": "Add a clone action for all entities",
-            "homepage": "https://www.drupal.org/project/entity_clone",
-            "support": {
-                "source": "https://git.drupalcode.org/project/entity_clone"
-            }
-        },
-        {
             "name": "drupal/fontawesome",
             "version": "2.18.0",
             "source": {
@@ -2993,52 +2941,6 @@
             }
         },
         {
-            "name": "drupal/layout_builder_component_attributes",
-            "version": "1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/layout_builder_component_attributes.git",
-                "reference": "1.2.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/layout_builder_component_attributes-1.2.0.zip",
-                "reference": "1.2.0",
-                "shasum": "9fa9686a46448a4c4b431a37411497753f55960c"
-            },
-            "require": {
-                "drupal/core": "^8.8|^9.0",
-                "neilime/php-css-lint": "^2.0|^3.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "1.2.0",
-                    "datestamp": "1616522176",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Chris Burge",
-                    "homepage": "https://www.drupal.org/user/1826152"
-                }
-            ],
-            "description": "Allows editors to add HTML attributes to Layout Builder components (blocks)",
-            "homepage": "https://drupal.org/project/layout_builder_component_attributes",
-            "support": {
-                "source": "https://cgit.drupalcode.org/layout_builder_component_attributes",
-                "issues": "https://drupal.org/project/issues/layout_builder_component_attributes"
-            }
-        },
-        {
             "name": "drupal/link_icons",
             "version": "3.0.3",
             "source": {
@@ -3084,59 +2986,6 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/link_icons",
                 "issues": "https://drupal.org/project/issues/link_icons"
-            }
-        },
-        {
-            "name": "drupal/twig_tweak",
-            "version": "2.9.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/twig_tweak.git",
-                "reference": "8.x-2.9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/twig_tweak-8.x-2.9.zip",
-                "reference": "8.x-2.9",
-                "shasum": "c45ba1a41e323a432d1ff36d0a72344b88595a39"
-            },
-            "require": {
-                "drupal/core": "^8.7 || ^9.0",
-                "twig/twig": "^1.41 || ^2.12"
-            },
-            "suggest": {
-                "symfony/var-dumper": "Better dump() function for debugging Twig variables"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-2.9",
-                    "datestamp": "1608093728",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Chi",
-                    "homepage": "https://www.drupal.org/user/556138"
-                }
-            ],
-            "description": "A Twig extension with some useful functions and filters for Drupal development.",
-            "homepage": "https://www.drupal.org/project/twig_tweak",
-            "keywords": [
-                "Drupal",
-                "Twig"
-            ],
-            "support": {
-                "source": "https://git.drupalcode.org/project/twig_tweak",
-                "issues": "https://www.drupal.org/project/issues/twig_tweak"
             }
         },
         {
@@ -4745,75 +4594,6 @@
                 }
             ],
             "time": "2020-11-13T09:40:50+00:00"
-        },
-        {
-            "name": "neilime/php-css-lint",
-            "version": "v3.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/neilime/php-css-lint.git",
-                "reference": "5dc9dd1d3238d29a9ff210cd7d934cfee00e5e96"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/neilime/php-css-lint/zipball/5dc9dd1d3238d29a9ff210cd7d934cfee00e5e96",
-                "reference": "5dc9dd1d3238d29a9ff210cd7d934cfee00e5e96",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "php": "^7.3 || ^8"
-            },
-            "require-dev": {
-                "pcov/clobber": "^2.0",
-                "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan": "^0.12",
-                "phpstan/phpstan-phpunit": "^0.12",
-                "phpunit/phpunit": "^9.2.5",
-                "slam/phpstan-laminas-framework": "^0.12",
-                "squizlabs/php_codesniffer": "^3.5"
-            },
-            "bin": [
-                "scripts/php-css-lint"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "CssLint\\": "src/CssLint"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Neilime",
-                    "homepage": "https://github.com/neilime",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Powerful & memory efficient CSS linter for PHP",
-            "homepage": "https://neilime.github.io/php-css-lint/",
-            "keywords": [
-                "css",
-                "lint",
-                "linter",
-                "syntax",
-                "validation"
-            ],
-            "funding": [
-                {
-                    "url": "https://github.com/neilime",
-                    "type": "github"
-                }
-            ],
-            "time": "2021-03-04T16:36:50+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -9741,9 +9521,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "drupal/entity_clone": 10
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
