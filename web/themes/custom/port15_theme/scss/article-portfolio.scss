@@ -36,6 +36,8 @@ Header Image styles */
 
 .block-field-blocknodeportfolio-itemfield-header-image,
 .block-field-blocknodearticlefield-header-image {
+  max-width: 800px;
+  margin: 0 auto;
 
   .field--name-field-header-image {
     max-width: 800px;

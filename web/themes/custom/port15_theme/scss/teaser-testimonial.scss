@@ -1,3 +1,38 @@
+/* Featured Testimonial styling 
+ */
+.block-views-blocktestimonials-block-2 {
+
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+
+
+
+
+.Testimonials.featured {
+
+  .testimonial-item {
+    background-color: #fff;
+    padding: 24px;
+    margin-bottom: 0px;
+
+
+    .node--view-mode-teaser {
+      border-bottom: 0px;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+
+    }
+
+  }
+
+}
+
+
+
+
+
+
 .Testimonials {
   display: flex;
   flex-direction: column;
@@ -19,7 +54,7 @@
 
 
 
-  /*   .node-testimonial-teaser */
+
 
   .testimonial-item {
     margin-bottom: 20px;
@@ -61,6 +96,12 @@
 
       .field--name-field-author-url a {
         color: $red;
+
+
+        &:hover {
+          color: $grey;
+          text-decoration: underline;
+        }
       }
 
       .field--name-field-author-url ::before {
