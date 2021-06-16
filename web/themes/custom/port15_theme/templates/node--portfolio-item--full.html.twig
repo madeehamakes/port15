@@ -59,54 +59,54 @@
  * @see template_preprocess_node()
  */
 #}
-<!-- 
-Copy of node.html -->
+<style>
+  /* Fixing layout builder glitches with hiding view title and submitted date. Note the view block uses the title field in it's display type so it displays on the page twice. Removing the horizontal line from the title as a quick patch.  */
+  article header,
+  .horizontal-rule.small {
+    display: none;
+  }
 
-<!-- Note: This is for vertical cards that are used for articles on the homepage and on the blog and work pages for both article and portfolio content types.  -->
+</style>
+
+
+
 
 
 {{ attach_library('bootstrap_barrio/node') }}
 
-{% set tag = 'I am a tag' %}
-{% set title = 'The process behind building my first Drupal project' %}
-
-
-{% set image_url = 'https://uploads-ssl.webflow.com/5f7f3e9041dfcd50903a6015/5f7fb9db5d57de84aceba263_mobile-mockup-01.jpg' %}
-
-<!-- Note cards on the work and blog pages are not center -->
-<div class="card h-100 p-3">
-  {{ content.field_thumbnail_image }}
-
-
-
-
-  <!--   Make card body flex container to create equal heights -->
-  <div class="card-body d-flex flex-column">
-    <p class="tag">{{ content.field_tags.0 }} </p>
-    <h3 class="title">{{label }} </h3>
-
-    <!-- Note: On home there is a description in the cards -->
-
-    {% if content.body %}
-    {{content.body}}
-
-    {% endif %}
-
-
-    <!-- Add mt-auto to make button always take up available space -->
-    <div class="card-footer mt-auto">
-
-
-      <a href="{{node.id}}" class="button link-btn secondary">
-        <div> Case Study </div>
-      </a>
-
-
-
-
-
-
+{%
+  set classes = [
+    'node',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+    'clearfix',
+  ]
+%}
+<article{{ attributes.addClass(classes) }}>
+  <header>
+    {{ title_prefix }}
+    {% if label and not page %}
+    <h2{{ title_attributes.addClass('node__title') }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      </h2>
+      {% endif %}
+      {{ title_suffix }}
+      {% if display_submitted %}
+      <div class="node__meta">
+        {{ author_picture }}
+        {% block submitted %}
+        <em{{ author_attributes }}>
+          {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+          </em>
+          {% endblock %}
+          {{ metadata }}
+      </div>
+      {% endif %}
+  </header>
+  <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
+    {{ content }}
     </div>
-
-  </div>
-</div>
+    </article>

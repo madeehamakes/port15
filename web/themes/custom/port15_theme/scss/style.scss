@@ -3,7 +3,7 @@ Theme Name: Bootstrap 4 Sass
 Description: Bootstrap 4 with Sass
 */
 
-// import files
+// import files 
 @import "import";
 
 
@@ -65,27 +65,6 @@ h4 {
   text-transform: uppercase;
   letter-spacing: 1;
 }
-
-/* .node__content {
-
-  padding: 0 20px;
-
-} */
-
-.container {
-  max-width: 1080px;
-}
-
-
-/* On Portfolio Page */
-
-.item-wrapper {
-
-  max-width: 1080px;
-  margin: 0 auto;
-}
-
-
 
 
 /* MISC STYLES 
@@ -161,65 +140,31 @@ img {
 }
 
 
-.node__content {
-
-  ul {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-left: 0px;
-    list-style-type: none;
-  }
-
-  ul li::before {
-    content: "\2022";
-    color: $red;
-    padding-left: 20px;
-    padding-right: 12px;
-
-  }
-
-  blockquote {
-    padding: 10px 20px;
-    margin: 20px 48px;
-    border-right: 5px solid $steel-blue;
-    border-left: 5px solid $steel-blue;
-    color: $steel-blue;
-    font-size: 22px;
-    line-height: 28px;
-    font-weight: 300;
-
-  }
-
-  table {
-
-    width: 100%;
-    margin-top: 32px;
-    font-size: 16px;
-    color: #5c5c5c;
 
 
-  }
-
-  th {
-    background-color: #061a2e;
-    background-image: linear-gradient(144deg, $teal, $steel-blue);
-    color: $white;
-
-  }
-
-  th,
-  td {
-
-    padding: 16px;
-
-  }
-
-  tr:nth-child(even) {
-    background-color: hsla(0, 0%, 56.1%, 0.1);
-
-  }
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
 
 
 
 
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+
+}
+
+/* 
+Constrain width of views */
+.views-element-container {
+  max-width: 1080px;
+  margin: 0 auto;
 }

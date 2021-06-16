@@ -59,6 +59,19 @@
  * @see template_preprocess_node()
  */
 #}
+<style>
+  /* Fixing layout builder glitches with hiding view title and submitted date. Note the view block uses the title field in it's display type so it displays on the page twice. Removing the horizontal line from the title as a quick patch.  */
+  article header,
+  .horizontal-rule.small {
+    display: none;
+  }
+
+</style>
+
+
+
+
+
 {{ attach_library('bootstrap_barrio/node') }}
 
 {%
@@ -93,15 +106,7 @@
       </div>
       {% endif %}
   </header>
-  <div{{ content_attributes.addClass('node__content', 'item-wrapper','clearfix') }}>
-
-
-    {{ content.field_header_image }}
-
-
-
-
-
-    {{ content.body }}
+  <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
+    {{ content }}
     </div>
     </article>

@@ -1,0 +1,31 @@
+.grey-background {
+  background-color: #f2f2f2;
+
+
+}
+
+.steel-background {
+
+  background-color: $steel-blue;
+}
+
+.teal-background {
+  background-color: $teal;
+}
+
+/* If a dark background-color, the text color should be white */
+
+.teal-background,
+.steel-background {
+  .section__wrapper {
+    h2 {
+      color: $white;
+    }
+
+    .horizontal-rule {
+      background-color: $white;
+    }
+  }
+
+
+}

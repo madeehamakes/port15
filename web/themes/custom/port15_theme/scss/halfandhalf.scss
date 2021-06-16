@@ -1,7 +1,10 @@
 .img-text-wrap-container {
 
 
+
   .container {
+
+
 
     .img-txt-wrap {
       padding-top: 80px;
@@ -30,16 +33,14 @@
         width: 50%;
       }
 
+
+
       .half-text-content {
         padding-top: 42px;
         padding-left: 42px;
       }
 
-      .half-text-content.left-side {
-        padding-top: 10px;
-        padding-right: 42px;
-        padding-left: 20px;
-      }
+
 
       .half-text-content p {
         font-size: 20px;
@@ -79,6 +80,14 @@
 
 
     }
+
+    /* When the image is on the right (direction is reversed adjust padding direction) */
+    div.flex-row-reverse .half-text .half-text-content {
+      padding-top: 10px;
+      padding-right: 42px;
+      padding-left: 20px;
+    }
+
 
 
   }

@@ -31,9 +31,7 @@
 #}
 
 <!-- Copied from block.html.twig -->
-<!-- Note: This is the template for the blocks that have half an image and half text.  -->
-<!-- To Do: Create reusable blocks based off of this template. Also, how to make resuable blocks that allow for alternation of images/text -->
-<!-- To Do: In some areas this block has a background color -->
+
 
 {%
   set classes = [
@@ -51,9 +49,9 @@
   <div class="container">
     {% block content %}
 
-    <!-- Note: If the image appears on the right and text on the left then this class needs to be added to the div below .flex-row-reverse"  -->
+    <!-- Note: If the image appears on the right and text on the left then this class needs to be added to the div below .flex-row-reverse" Use layout builder attributes to add this class and in the css added styling to make sure the text padding adjusts -->
     <div {{ content_attributes.addClass('img-txt-wrap flex-wrap d-flex ') }}>
-      <!-- TO Do: Add vertical image -->
+
       <div class="column half-img">
 
 
@@ -71,7 +69,6 @@
         <div class="horizontal-rule"> </div>
 
 
-        <!-- Note: If you need the text to appear on the left then add .left-side to this div -->
         <div class="half-text-content ">
 
           {{ title_prefix }}

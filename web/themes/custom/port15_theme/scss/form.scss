@@ -1,3 +1,10 @@
+/* Styles for Form */
+
+.form-wrapper {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
 .send-me-note-block {
 
   padding: 24px;
@@ -35,36 +42,41 @@
 
   }
 
-  button {
-    border: none;
-    text-transform: capitalize;
-  }
+  .wrapper {
+    button {
+      border: none;
+      text-transform: capitalize;
+    }
 
 
-  button#edit-actions-submit {
-    padding: 14px 20px 12px;
-    border-bottom: 2px solid #1d1d1d;
-    background-color: #1d1d1d;
-    -webkit-transition: all 400ms ease-in-out;
-    transition: all 400ms ease-in-out;
-    color: $white;
-    max-width: 100%;
-    display: inline-block;
-    letter-spacing: 1.1px;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-bottom-color: $red;
-    background-color: $red;
-    color: $white;
-
-
-    &:hover {
-      background-color: transparent;
-      color: $red;
+    button#edit-actions-submit {
+      padding: 14px 20px 12px;
+      border-bottom: 2px solid #1d1d1d;
+      background-color: #1d1d1d;
+      -webkit-transition: all 400ms ease-in-out;
+      transition: all 400ms ease-in-out;
+      color: $white;
+      max-width: 100%;
+      display: inline-block;
+      letter-spacing: 1.1px;
       text-decoration: none;
+      text-transform: uppercase;
+      border-bottom-color: $red;
+      background-color: $red;
+      color: $white;
+
+
+      &:hover {
+        background-color: transparent;
+        color: $red;
+        text-decoration: none;
+      }
+
     }
 
   }
+
+
 
 
 
@@ -80,5 +92,62 @@
   text-align: center;
   background-color: #dddddd;
   color: #000;
+
+}
+
+
+/* Styles for connect block */
+
+.block-inline-blockconnect-with-me-text {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  .content {
+    padding-left: 42px;
+    padding-top: 42px;
+  }
+
+
+
+  .horizontal-rule {
+    width: 140px;
+    height: 1px;
+    background-color: #d4d4d4;
+    margin-bottom: 16px;
+  }
+
+
+  .field__items {
+    .field__item {
+      margin-bottom: 38px;
+
+      a {
+        font-size: 22px;
+        text-transform: capitalize;
+        color: $red;
+        font-weight: 400;
+        transition: all 400ms ease-in-out;
+
+
+
+      }
+
+      &:hover a {
+        color: $grey;
+        text-decoration: underline;
+      }
+
+    }
+
+
+
+
+  }
+
+
+
+
+
+
 
 }

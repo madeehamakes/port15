@@ -1,4 +1,4 @@
-{#
+ {#
 /**
  * @file
  * Default theme implementation to display a block.
@@ -29,29 +29,73 @@
  * @ingroup themeable
  */
 #}
-{%
+
+ <!-- Copied from block.html.twig -->
+
+ {%
   set classes = [
     'block',
     'block-' ~ configuration.provider|clean_class,
     'block-' ~ plugin_id|clean_class,
   ]
 %}
-<div{{ attributes.addClass(classes) }}>
-  {{ title_prefix }}
-
-  <div class="horizontal-rule"> </div>
-
-  {% if label %}
-  <h2{{ title_attributes }}>{{ label }}</h2>
-    {% endif %}
-    {{ title_suffix }}
-    {% block content %}
-    <div{{ content_attributes.addClass('content') }}>
+ <div{{ attributes.addClass(classes).addClass('img-text-wrap-container', 'form-wrapper')}}>
 
 
-      <h3>{{ content.field_connect_with_me_subheading }} </h3>
-      {{ content.field_connect_with_me_links }}
+   <div class="container">
+     {% block content %}
 
-      </div>
-      {% endblock %}
-      </div>
+     <!-- This template is for the form and connect me text div -->
+     <div {{ content_attributes.addClass('img-txt-wrap flex-wrap d-flex ') }}>
+
+       <div class="column half-img">
+
+
+         <div class="send-me-note-block">
+
+           {{ title_prefix }}
+           {% if label %}
+
+           <h2{{ title_attributes }}>{{ label }}</h2>
+             {% endif %}
+             {{ title_suffix }}
+
+
+
+
+             {{ content.field_form_summary }}
+
+             {{ content.field_form }}
+
+
+         </div>
+
+       </div>
+
+
+
+       <div class="column half-text d-flex flex-wrap align-items-center align-content-center">
+
+         <div class="horizontal-rule"> </div>
+
+
+         <!-- Note: If you need the text to appear on the left then add .left-side to this div -->
+         <div class="half-text-content ">
+
+
+
+
+           <h3>{{ content.field_connect_with_me_subheading }} </h3>
+           {{ content.field_connect_with_me_links }}
+
+
+
+
+         </div>
+       </div>
+
+     </div>
+   </div>
+
+   </div>
+   {% endblock %}
