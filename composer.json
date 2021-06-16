@@ -25,6 +25,7 @@
         "drupal/core-recommended": "^8.9",
         "drupal/devel": "^4.1",
         "drupal/fontawesome": "^2.18",
+        "drupal/layout_builder_component_attributes": "^1.2",
         "drupal/link_icons": "^3.0",
         "drupal/views_bootstrap": "^4.3",
         "drupal/webform": "^6.0",
