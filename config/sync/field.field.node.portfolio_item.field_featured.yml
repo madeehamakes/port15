@@ -1,0 +1,23 @@
+uuid: 20f664b6-77aa-4757-9b9a-14501bf55ba2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_featured
+    - node.type.portfolio_item
+id: node.portfolio_item.field_featured
+field_name: field_featured
+entity_type: node
+bundle: portfolio_item
+label: Featured
+description: 'Check Featured if you want this piece to be featured at the top of the portfolio page. '
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

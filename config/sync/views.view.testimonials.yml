@@ -8,6 +8,7 @@ dependencies:
   module:
     - node
     - user
+    - views_bootstrap
 id: testimonials
 label: Testimonials
 module: views
@@ -53,11 +54,16 @@ display:
           items_per_page: 2
           offset: 0
       style:
-        type: default
+        type: views_bootstrap_grid
         options:
-          row_class: 'col-12 '
+          row_class: testimonial-item
           default_row_class: true
           uses_fields: false
+          col_xs: col-12
+          col_sm: col-sm-12
+          col_md: col-md-12
+          col_lg: col-lg-12
+          col_xl: col-xl-12
       row:
         type: 'entity:node'
         options:
@@ -207,12 +213,102 @@ display:
   block_1:
     display_plugin: block
     id: block_1
+    display_title: 'Testimonials - Pagination'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      block_description: 'Testimonials block'
+      display_description: 'Testimonials - Pagination'
+      pager:
+        type: full
+        options:
+          items_per_page: 5
+          offset: 0
+          id: 0
+          total_pages: null
+          tags:
+            previous: ‹
+            next: ' ›'
+            first: «
+            last: ' »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
+      defaults:
+        pager: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+      use_more: false
+      use_more_always: true
+      use_more_text: 'View all testimonials'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  block_2:
+    display_plugin: block
+    id: block_2
+    display_title: 'Testimonials - Featured'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      block_description: 'Testimonials block'
+      display_description: 'Testimonials - Featured'
+      use_more: false
+      defaults:
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+        pager: false
+        css_class: false
+      use_more_always: true
+      use_more_text: 'View all testimonials'
+      pager:
+        type: some
+        options:
+          items_per_page: 1
+          offset: 0
+      css_class: 'Testimonials featured'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  testimonials:
+    display_plugin: block
+    id: testimonials
     display_title: 'Testimonials block'
     position: 1
     display_options:
       display_extenders: {  }
       block_description: 'Testimonials block'
-      display_description: ''
+      display_description: 'Testimonials - Pagination'
+      pager:
+        type: some
+        options:
+          items_per_page: 2
+          offset: 0
+      defaults:
+        pager: false
+        link_display: false
+        link_url: false
+      link_display: custom_url
+      link_url: /node/56
     cache_metadata:
       max-age: -1
       contexts:

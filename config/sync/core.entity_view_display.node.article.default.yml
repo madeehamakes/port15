@@ -4,7 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.node.article.body
-    - field.field.node.article.comment
+    - field.field.node.article.field_featured
+    - field.field.node.article.field_header_image
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
     - image.style.large
@@ -28,26 +29,45 @@ content:
       trim_length: 600
     third_party_settings: {  }
     label: hidden
+  field_featured:
+    weight: 6
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_header_image:
+    weight: 7
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
   field_image:
-    type: image_url
+    type: image
     weight: 0
     region: content
     settings:
       image_style: large
+      image_link: ''
     third_party_settings: {  }
     label: hidden
   field_tags:
-    type: entity_reference_label
-    weight: 2
-    region: content
-    label: visually_hidden
+    weight: 5
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   links:
     weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden:
-  comment: true
+hidden: {  }

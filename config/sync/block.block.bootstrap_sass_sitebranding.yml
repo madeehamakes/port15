@@ -1,0 +1,23 @@
+uuid: 987ba69e-346d-42ce-968a-c88d23ec07ef
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap_sass
+id: bootstrap_sass_sitebranding
+theme: bootstrap_sass
+region: footer_first
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

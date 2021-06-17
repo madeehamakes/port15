@@ -1,0 +1,44 @@
+uuid: c08b0a7f-2dd9-4c65-994c-c659685e588e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.footer_icons.field_link
+    - field.field.media.footer_icons.field_media_font_awesome_icon
+    - media.type.footer_icons
+  module:
+    - fontawesome
+    - link_icons
+id: media.footer_icons.default
+targetEntityType: media
+bundle: footer_icons
+mode: default
+content:
+  field_link:
+    weight: 1
+    label: hidden
+    settings:
+      text: title
+      hideURLscheme: '1'
+      order: first
+      size: 1x
+      width: fixed
+      coloured: coloured
+      shaped: circled
+      background: none
+    third_party_settings: {  }
+    type: link_icons_formatter
+    region: content
+  field_media_font_awesome_icon:
+    label: visually_hidden
+    weight: 0
+    settings:
+      layers: false
+    third_party_settings: {  }
+    type: fontawesome_icon_formatter
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

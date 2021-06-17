@@ -1,0 +1,31 @@
+uuid: 7830802d-06d4-4222-b492-40fd2fb02372
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_icons
+    - field.field.block_content.footer_icons.field_foo
+  module:
+    - link
+id: block_content.footer_icons.default
+targetEntityType: block_content
+bundle: footer_icons
+mode: default
+content:
+  field_foo:
+    weight: 27
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

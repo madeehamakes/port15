@@ -1,0 +1,20 @@
+uuid: 418dd008-099b-4ae0-b013-3c4e5e586852
+langcode: en
+status: true
+dependencies:
+  module:
+    - port_core
+  theme:
+    - bootstrap_sass
+id: bootstrap_sass_footersocialicons
+theme: bootstrap_sass
+region: footer_second
+weight: 0
+provider: null
+plugin: port_core_footer_social_icons
+settings:
+  id: port_core_footer_social_icons
+  label: Footer-Social-Icons
+  provider: port_core
+  label_display: visible
+visibility: {  }

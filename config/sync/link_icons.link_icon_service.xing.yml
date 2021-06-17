@@ -1,0 +1,16 @@
+uuid: 66ab94df-daaf-47f0-8849-3ef4d43c673f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 5GxQtL4e0cUaTR_gfdnA81gNjMM4x0e2OhNOzOwekYw
+id: xing
+label: Xing
+hostnames:
+  - xing.com
+class: null
+icon: xing
+icon_style: brand
+icon_square: xing-square
+icon_circle: null
+color: '#006464'

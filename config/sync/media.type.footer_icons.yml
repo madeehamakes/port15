@@ -1,0 +1,15 @@
+uuid: 148ba0b9-d41b-4bf9-a59e-cb406c2973cf
+langcode: en
+status: true
+dependencies:
+  module:
+    - fontawesome_media
+id: footer_icons
+label: 'Linked Icons'
+description: ''
+source: font_awesome_icon
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_font_awesome_icon
+field_map: {  }

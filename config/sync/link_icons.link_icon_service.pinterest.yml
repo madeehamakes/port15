@@ -1,0 +1,27 @@
+uuid: 51733674-a121-40e2-bb1b-b6bd1d2816a4
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vOUc3BosJk1_R2sHxcmSrvMBIuSF0rXfODbLN0v7-30
+id: pinterest
+label: Pinterest
+hostnames:
+  - pinterest.ca
+  - pinterest.com
+  - pinterest.com.au
+  - pinterest.com.br
+  - pinterest.com.mx
+  - pinterest.co.uk
+  - pinterest.de
+  - pinterest.es
+  - pinterest.fr
+  - pinterest.it
+  - pinterest.jp
+  - pinterest.nl
+class: null
+icon: pinterest-p
+icon_style: brand
+icon_square: pinterest-square
+icon_circle: pinterest
+color: '#DC1E26'

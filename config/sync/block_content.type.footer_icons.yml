@@ -1,0 +1,8 @@
+uuid: 4fcbf033-f5ce-4c07-90d7-3da5eb792e3d
+langcode: en
+status: true
+dependencies: {  }
+id: footer_icons
+label: 'Footer Icons'
+revision: 0
+description: ''

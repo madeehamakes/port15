@@ -1,0 +1,25 @@
+uuid: fe9be178-829b-47cd-86e8-caaf4bbcd336
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer_icons:1820a4cb-3dd9-440e-bbfd-32554a4e3c51'
+  module:
+    - block_content
+  theme:
+    - port15_theme
+id: iconsinthefooter
+theme: port15_theme
+region: footer_second
+weight: 0
+provider: null
+plugin: 'block_content:1820a4cb-3dd9-440e-bbfd-32554a4e3c51'
+settings:
+  id: 'block_content:1820a4cb-3dd9-440e-bbfd-32554a4e3c51'
+  label: 'Icons in the Footer'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

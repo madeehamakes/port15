@@ -1,0 +1,16 @@
+uuid: a2d8416f-a064-469c-810c-d39046e0eb5f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: a2ovFB2qQYvMHRy5GyurgJfMog-1XKKwCKVe7c3yomw
+id: yahoo
+label: Yahoo
+hostnames:
+  - yahoo.com
+class: null
+icon: yahoo
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: '#6001D2'

@@ -1,0 +1,30 @@
+uuid: 0b526b37-9b29-483d-8e43-e268ca09fa37
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_icons
+    - field.field.block_content.footer_icons.field_foo
+  module:
+    - link_icons
+id: block_content.footer_icons.default
+targetEntityType: block_content
+bundle: footer_icons
+mode: default
+content:
+  field_foo:
+    weight: 1
+    label: hidden
+    settings:
+      text: none
+      hideURLscheme: '1'
+      order: first
+      size: 1x
+      width: fixed
+      coloured: uncoloured
+      shaped: circled
+      background: none
+    third_party_settings: {  }
+    type: link_icons_formatter
+    region: content
+hidden: {  }

@@ -1,0 +1,18 @@
+uuid: a73fb57b-7743-4d0a-b3e3-4ef0d728012e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: JmLFGZo-QpVyblZnXuqtmlIKePQQzXtQK4QUwRFj7fw
+id: google
+label: Google
+hostnames:
+  - google.ca
+  - google.com
+  - google.co.uk
+class: null
+icon: google
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: '#4285F4'

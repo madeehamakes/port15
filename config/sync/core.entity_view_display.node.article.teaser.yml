@@ -5,7 +5,8 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.article.body
-    - field.field.node.article.comment
+    - field.field.node.article.field_featured
+    - field.field.node.article.field_header_image
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
     - image.style.medium
@@ -37,18 +38,12 @@ content:
       image_style: medium
     third_party_settings: {  }
     label: hidden
-  field_tags:
-    type: entity_reference_label
-    weight: 10
-    region: content
-    settings:
-      link: true
-    third_party_settings: {  }
-    label: hidden
   links:
     weight: 100
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
-  comment: true
+  field_featured: true
+  field_header_image: true
+  field_tags: true

@@ -1,0 +1,16 @@
+uuid: d38da461-690b-4214-8bba-04ed63b3a63a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: i_920-4NCbTv26dLUV_DFG2lOyEoyw0_HQ-CfmCc9qQ
+id: instagram
+label: Instagram
+hostnames:
+  - instagram.com
+class: null
+icon: instagram
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: '#48769B'

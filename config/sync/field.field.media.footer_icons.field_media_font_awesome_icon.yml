@@ -1,0 +1,21 @@
+uuid: bb31effe-2249-4f31-9699-ba760136f40c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_font_awesome_icon
+    - media.type.footer_icons
+  module:
+    - fontawesome
+id: media.footer_icons.field_media_font_awesome_icon
+field_name: field_media_font_awesome_icon
+entity_type: media
+bundle: footer_icons
+label: 'Font Awesome Icon'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: fontawesome_icon

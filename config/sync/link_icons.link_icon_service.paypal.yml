@@ -1,0 +1,17 @@
+uuid: a611485f-1ae2-4493-9498-914c62697c67
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1exPEaxJC9kWqo6MwyMdzEZSE7UywOKYFnBpxmhnD9s
+id: paypal
+label: Paypal
+hostnames:
+  - paypal.com
+  - paypal.me
+class: null
+icon: paypal
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: '#012069'

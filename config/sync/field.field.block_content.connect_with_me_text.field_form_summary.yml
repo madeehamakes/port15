@@ -1,0 +1,21 @@
+uuid: 3fb25166-7f7d-4528-bc98-f0e59c22536a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.connect_with_me_text
+    - field.storage.block_content.field_form_summary
+  module:
+    - text
+id: block_content.connect_with_me_text.field_form_summary
+field_name: field_form_summary
+entity_type: block_content
+bundle: connect_with_me_text
+label: Form-Summary
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

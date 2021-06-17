@@ -5,18 +5,14 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.portfolio_item.body
+    - field.field.node.portfolio_item.field_featured
     - field.field.node.portfolio_item.field_header_image
-    - field.field.node.portfolio_item.field_links
-    - field.field.node.portfolio_item.field_password
-    - field.field.node.portfolio_item.field_rank_level
-    - field.field.node.portfolio_item.field_subheading
-    - field.field.node.portfolio_item.field_tag
+    - field.field.node.portfolio_item.field_tags
     - field.field.node.portfolio_item.field_thumbnail_image
     - image.style.medium
     - node.type.portfolio_item
   module:
     - image
-    - link
     - text
     - user
 id: node.portfolio_item.teaser
@@ -40,25 +36,6 @@ content:
     settings:
       image_style: medium
     third_party_settings: {  }
-  field_links:
-    type: link
-    weight: 4
-    region: content
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-  field_subheading:
-    type: basic_string
-    weight: 3
-    region: content
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
   field_thumbnail_image:
     type: image_url
     weight: 1
@@ -73,6 +50,5 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_password: true
-  field_rank_level: true
-  field_tag: true
+  field_featured: true
+  field_tags: true

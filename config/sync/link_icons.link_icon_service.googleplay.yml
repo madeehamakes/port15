@@ -1,0 +1,16 @@
+uuid: bf9e4a04-fc3e-4de7-a9a8-843ac239ee41
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ob8Uz9Tk-ukWn7ajH5g5v4fOlFA-tlEhRDtu7PSBsIc
+id: googleplay
+label: 'Google Play'
+hostnames:
+  - play.google.com
+class: google-play
+icon: google-play
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: '#689F38'

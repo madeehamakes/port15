@@ -1,0 +1,26 @@
+uuid: 30ae5ba2-63e1-404d-9b6e-1438622bc7b4
+langcode: en
+status: true
+dependencies:
+  module:
+    - port_core
+    - system
+  theme:
+    - bootstrap_sass
+id: bootstrap_sass_accordion
+theme: bootstrap_sass
+region: content
+weight: -5
+provider: null
+plugin: port_core_accordion
+settings:
+  id: port_core_accordion
+  label: Accordion
+  provider: port_core
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /faq
+    negate: false
+    context_mapping: {  }

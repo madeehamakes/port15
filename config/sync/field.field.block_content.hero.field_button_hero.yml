@@ -1,0 +1,23 @@
+uuid: b58f9454-4606-419c-a217-577730a5fa16
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero
+    - field.storage.block_content.field_button_hero
+  module:
+    - link
+id: block_content.hero.field_button_hero
+field_name: field_button_hero
+entity_type: block_content
+bundle: hero
+label: Button
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

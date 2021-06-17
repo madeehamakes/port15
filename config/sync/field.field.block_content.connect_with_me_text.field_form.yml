@@ -1,0 +1,32 @@
+uuid: 9e555d34-1df5-4ac7-81fa-2c91b91ad546
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.connect_with_me_text
+    - field.storage.block_content.field_form
+    - webform.webform.contact
+  module:
+    - webform
+id: block_content.connect_with_me_text.field_form
+field_name: field_form
+entity_type: block_content
+bundle: connect_with_me_text
+label: 'Connect Form'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+    target_uuid: b28a7f5b-01f1-495e-b653-fd8a0b2f7ae2
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

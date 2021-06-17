@@ -1,0 +1,16 @@
+uuid: ef237ae9-4b67-4295-8198-59c2ed2c1137
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 8-BcTfJMszXLMYup6Q0V4_m43AXouqwjyK9E6R_Wa_4
+id: spotify
+label: Spotify
+hostnames:
+  - spotify.com
+class: null
+icon: spotify
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: '#8EBD05'

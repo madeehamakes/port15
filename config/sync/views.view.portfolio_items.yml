@@ -9,6 +9,7 @@ dependencies:
   module:
     - node
     - user
+    - views_bootstrap
 id: portfolio_items
 label: Portfolio
 module: views
@@ -178,14 +179,76 @@ display:
   block_1:
     display_plugin: block
     id: block_1
-    display_title: 'Portfolio - 3'
+    display_title: 'Portfolio - Recent Projects - Vertical'
     position: 1
     display_options:
       display_extenders: {  }
-      css_class: Horizontal-Cards
+      css_class: Vertical-Cards
       defaults:
         css_class: false
+        style: false
+        row: false
+        filters: false
+        filter_groups: false
+        link_display: false
+        link_url: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+        title: false
       display_description: ''
+      style:
+        type: views_bootstrap_grid
+        options:
+          row_class: 'mt-3 mb-5'
+          default_row_class: true
+          uses_fields: false
+          col_xs: col-12
+          col_sm: col-sm-6
+          col_md: col-md-6
+          col_lg: col-lg-4
+          col_xl: col-xl-4
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: vertical_cards
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            portfolio_item: portfolio_item
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      link_display: custom_url
+      link_url: /node/37
+      use_more: false
+      use_more_always: true
+      use_more_text: 'View all work'
+      title: 'More Work'
     cache_metadata:
       max-age: -1
       contexts:
@@ -194,10 +257,10 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  block_2:
+  featured_portfolio:
     display_plugin: block
-    id: block_2
-    display_title: 'Portfolio - Featured Project'
+    id: featured_portfolio
+    display_title: 'Featured Portfolio Item'
     position: 1
     display_options:
       display_extenders: {  }
@@ -208,11 +271,99 @@ display:
         use_more_text: false
         title: false
         css_class: false
+        style: false
+        row: false
+        filters: false
+        filter_groups: false
       use_more_always: false
       use_more_text: 'View all work'
       title: 'Featured Project'
       css_class: Horizontal-Cards
       display_description: ''
+      style:
+        type: views_bootstrap_grid
+        options:
+          row_class: horizontal-card
+          default_row_class: true
+          uses_fields: false
+          col_xs: col-12
+          col_sm: col-sm-12
+          col_md: col-md-12
+          col_lg: col-lg-12
+          col_xl: col-xl-12
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: horizontal_cards
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            portfolio_item: portfolio_item
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_featured_value:
+          id: field_featured_value
+          table: node__field_featured
+          field: field_featured_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: boolean
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       max-age: -1
       contexts:
@@ -221,9 +372,9 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  block_3:
+  portfolio_pagination:
     display_plugin: block
-    id: block_3
+    id: portfolio_pagination
     display_title: 'Portfolio Pagination'
     position: 1
     display_options:
@@ -268,11 +419,16 @@ display:
       link_url: '#'
       display_description: ''
       style:
-        type: default
+        type: views_bootstrap_grid
         options:
-          row_class: 'col-sm-12 col-md-6  col-lg-4'
+          row_class: mt-5
           default_row_class: true
           uses_fields: false
+          col_xs: col-12
+          col_sm: col-sm-6
+          col_md: col-md-6
+          col_lg: col-lg-4
+          col_xl: col-xl-4
       row:
         type: 'entity:node'
         options:
@@ -286,6 +442,79 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  portfolio_recent_projects:
+    display_plugin: block
+    id: portfolio_recent_projects
+    display_title: 'Portfolio - Recent Projects'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      css_class: Horizontal-Cards
+      defaults:
+        css_class: false
+        style: false
+        row: false
+        filters: false
+        filter_groups: false
+        link_display: false
+        link_url: false
+      display_description: ''
+      style:
+        type: views_bootstrap_grid
+        options:
+          row_class: 'horizontal-card mt-5'
+          default_row_class: true
+          uses_fields: false
+          col_xs: col-12
+          col_sm: col-sm-12
+          col_md: col-md-12
+          col_lg: col-lg-12
+          col_xl: col-xl-12
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: horizontal_cards
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            portfolio_item: portfolio_item
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      link_display: custom_url
+      link_url: /node/37
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }

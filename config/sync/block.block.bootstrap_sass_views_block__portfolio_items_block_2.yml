@@ -1,0 +1,27 @@
+uuid: f415d853-4636-4f22-bfa5-965f2b50b7be
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap_sass
+id: bootstrap_sass_views_block__portfolio_items_block_2
+theme: bootstrap_sass
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:portfolio_items-block_2'
+settings:
+  id: 'views_block:portfolio_items-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: '1'
+visibility:
+  request_path:
+    id: request_path
+    pages: /work
+    negate: false
+    context_mapping: {  }

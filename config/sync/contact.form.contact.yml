@@ -1,0 +1,12 @@
+uuid: 7c857dda-2eb1-4933-a839-db0bc582421c
+langcode: en
+status: true
+dependencies: {  }
+id: contact
+label: Contact
+recipients:
+  - madeeha1030@gmail.com
+reply: ''
+weight: 0
+message: 'Thank you! Your submission has been received!'
+redirect: ''

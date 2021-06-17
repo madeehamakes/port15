@@ -8,6 +8,7 @@ dependencies:
     - node.type.page
   module:
     - layout_builder
+    - layout_discovery
     - text
     - user
 third_party_settings:
@@ -45,21 +46,6 @@ third_party_settings:
               id: 'extra_field_block:node:page:links'
             additional: {  }
             weight: 1
-          cf1626fa-3a3e-4f65-95af-274a238f46f0:
-            uuid: cf1626fa-3a3e-4f65-95af-274a238f46f0
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:page:body'
-              formatter:
-                label: hidden
-                type: text_default
-                settings: {  }
-                third_party_settings: {  }
-            additional: {  }
-            weight: 2
           8341f833-e566-4ae9-b159-cdc020524cb4:
             uuid: 8341f833-e566-4ae9-b159-cdc020524cb4
             region: content

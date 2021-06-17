@@ -1,0 +1,16 @@
+uuid: 80484c67-985a-4fd5-bb7d-90c3b52b9b49
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: RM9s47O2GSQYHs6egPTYcshtIqeqAcBysZVWM9sZ1pc
+id: behance
+label: Behance
+hostnames:
+  - behance.net
+class: null
+icon: behance
+icon_style: brand
+icon_square: behance-square
+icon_circle: null
+color: black

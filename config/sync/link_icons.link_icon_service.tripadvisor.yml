@@ -1,0 +1,17 @@
+uuid: 9cbe5cfd-4713-4338-9880-a28268d10d20
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: keD2lZi4aPqw9_4tQE3bqfMW2OPLJG1z_CSonakAgGQ
+id: tripadvisor
+label: Tripadvisor
+hostnames:
+  - tripadvisor.com
+  - tripadvisor.co.uk
+class: null
+icon: tripadvisor
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: black

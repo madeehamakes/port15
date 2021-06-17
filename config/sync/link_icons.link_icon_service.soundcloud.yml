@@ -1,0 +1,16 @@
+uuid: 936da0ac-52a4-4657-854e-4c2da8b98095
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: hS1laiOUmYhuCqFBg5iWK8ndkTum0_L7eErtFLH7l2s
+id: soundcloud
+label: Soundcloud
+hostnames:
+  - soundcloud.com
+class: null
+icon: soundcloud
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: '#FE4E00'

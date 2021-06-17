@@ -1,0 +1,60 @@
+uuid: 7d1e8133-ab74-45c4-bd2d-c817d6967775
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.connect_with_me_text
+    - field.field.block_content.connect_with_me_text.field_connect_with_me_links
+    - field.field.block_content.connect_with_me_text.field_connect_with_me_subheading
+    - field.field.block_content.connect_with_me_text.field_form
+    - field.field.block_content.connect_with_me_text.field_form_summary
+  module:
+    - link
+    - text
+    - webform
+id: block_content.connect_with_me_text.default
+targetEntityType: block_content
+bundle: connect_with_me_text
+mode: default
+content:
+  field_connect_with_me_links:
+    weight: 26
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_connect_with_me_subheading:
+    weight: 27
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_form:
+    weight: 32
+    settings:
+      default_data: true
+      webforms: {  }
+    third_party_settings: {  }
+    type: webform_entity_reference_select
+    region: content
+  field_form_summary:
+    weight: 30
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

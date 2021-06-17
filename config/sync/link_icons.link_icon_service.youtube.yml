@@ -1,0 +1,16 @@
+uuid: 1d4bd665-01fd-42a2-ac66-ba36c9c3db6e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: kgMxtZCPH-3SIZpC4cFsv9AwmcjiNqs3ud_XML3nzKg
+id: youtube
+label: YouTube
+hostnames:
+  - youtube.com
+class: null
+icon: youtube
+icon_style: brand
+icon_square: youtube-square
+icon_circle: null
+color: '#CC181E'

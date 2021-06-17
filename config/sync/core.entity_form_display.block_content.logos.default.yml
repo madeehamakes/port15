@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - block_content.type.logos
+    - field.field.block_content.logos.field_linkicons
     - field.field.block_content.logos.field_logo_url
     - field.field.block_content.logos.field_logos
     - image.style.thumbnail
@@ -15,6 +16,14 @@ targetEntityType: block_content
 bundle: logos
 mode: default
 content:
+  field_linkicons:
+    weight: 29
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
   field_logo_url:
     weight: 28
     settings:

@@ -1,0 +1,16 @@
+uuid: 519d2090-0259-484e-b2fd-21cf8030cdd2
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: lgTHQeNwSxouqB0CNwi6f-tihJxBP4ndBv_t_ujmDwA
+id: etsy
+label: Etsy
+hostnames:
+  - etsy.com
+class: null
+icon: etsy
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: '#F56400'

@@ -1,0 +1,17 @@
+uuid: 257be152-8e44-4038-b2c1-63b46c87d0dc
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: WvBUgZ4La3CCUuPJNnwOcWgYsrMZbce_2JxKt9leykw
+id: facebook
+label: Facebook
+hostnames:
+  - facebook.com
+  - fb.com
+class: null
+icon: facebook-f
+icon_style: brand
+icon_square: facebook-square
+icon_circle: facebook
+color: '#4965A0'

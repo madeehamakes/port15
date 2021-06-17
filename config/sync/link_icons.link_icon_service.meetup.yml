@@ -1,0 +1,16 @@
+uuid: 91756abc-681a-447f-9ae6-0aebfe096069
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: fWXGhUJ2eh_j0oKw7LpMfX4zWXsV_Om35auZTWjC4JI
+id: meetup
+label: Meetup
+hostnames:
+  - meetup.com
+class: null
+icon: meetup
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: '#ED1C40'

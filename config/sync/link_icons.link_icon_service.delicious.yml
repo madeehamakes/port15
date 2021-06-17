@@ -1,0 +1,16 @@
+uuid: 4463caa3-18d0-4dc4-a46d-62d9c0e49ae7
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 5S_-wazQpFw6XR0XzWxOF-dQoezS79P-EbmR3QnVEaA
+id: delicious
+label: Delicious
+hostnames:
+  - del.icio.us
+class: null
+icon: delicious
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: black

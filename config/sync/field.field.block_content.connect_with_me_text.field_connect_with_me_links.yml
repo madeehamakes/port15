@@ -1,0 +1,23 @@
+uuid: 6020ae19-c260-401f-aa6b-a1c2a7819af8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.connect_with_me_text
+    - field.storage.block_content.field_connect_with_me_links
+  module:
+    - link
+id: block_content.connect_with_me_text.field_connect_with_me_links
+field_name: field_connect_with_me_links
+entity_type: block_content
+bundle: connect_with_me_text
+label: 'Connect with me links'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

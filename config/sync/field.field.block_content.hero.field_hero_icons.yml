@@ -1,0 +1,21 @@
+uuid: 54332ea1-aa69-4110-a11d-b8f96d828f9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero
+    - field.storage.block_content.field_hero_icons
+  module:
+    - fontawesome
+id: block_content.hero.field_hero_icons
+field_name: field_hero_icons
+entity_type: block_content
+bundle: hero
+label: hero-icons
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: fontawesome_icon

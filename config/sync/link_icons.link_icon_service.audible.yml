@@ -1,0 +1,17 @@
+uuid: 71880d4c-d0a4-4e8c-9e2e-4c57b2a3d3cb
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: KuJsvLblB1U9nScyScv6YV75E96nRzLQLDlX54xhQIQ
+id: audible
+label: Audible
+hostnames:
+  - audible.com
+  - audible.co.uk
+class: null
+icon: audible
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: '#F7991C'

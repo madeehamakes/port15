@@ -1,0 +1,17 @@
+uuid: 8aed477c-885a-4b7e-ab6d-d8ccf74590a4
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: wysQxEnu8oi1jvJ-ADkYxHnkbDnv-6mPM1uEaza954I
+id: steam
+label: Steam
+hostnames:
+  - steamcommunity.com
+  - steampowered.com
+class: null
+icon: steam-symbol
+icon_style: brand
+icon_square: steam-square
+icon_circle: steam
+color: black

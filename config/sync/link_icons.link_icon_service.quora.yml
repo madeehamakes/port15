@@ -1,0 +1,16 @@
+uuid: 8047791d-b04f-411a-a2ad-9861ebb11d6d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: DGY32x6GtNdnHInGYf-Tdtgu9HbhhMr65wK-NTGcZQ4
+id: quora
+label: Quora
+hostnames:
+  - quora.com
+class: null
+icon: quora
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: '#B92B27'

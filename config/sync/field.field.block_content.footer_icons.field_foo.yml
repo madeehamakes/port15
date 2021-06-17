@@ -1,0 +1,23 @@
+uuid: 91e54842-a573-4061-b25f-7df218c7cc66
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_icons
+    - field.storage.block_content.field_foo
+  module:
+    - link
+id: block_content.footer_icons.field_foo
+field_name: field_foo
+entity_type: block_content
+bundle: footer_icons
+label: 'Footer Icons'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

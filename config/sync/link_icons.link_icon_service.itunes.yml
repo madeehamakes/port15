@@ -1,0 +1,16 @@
+uuid: 539898ef-1b87-4db7-98c5-0357cf0adbc6
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: xPP79S-DETV3PbKdi5ceJZeLpd6NddmRBOFASi39a0o
+id: itunes
+label: iTunes
+hostnames:
+  - itunes.apple.com
+class: null
+icon: itunes-note
+icon_style: brand
+icon_square: itunes
+icon_circle: null
+color: '#C420E3'

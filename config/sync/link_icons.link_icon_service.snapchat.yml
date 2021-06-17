@@ -1,0 +1,16 @@
+uuid: dcaeeecd-8134-4055-a9fe-d189c9ebe696
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: tx5tMhXzXLQV3sp7GkNSgrVprHGVWwtxQDtl1QLpkhE
+id: snapchat
+label: Snapchat
+hostnames:
+  - snapchat.com
+class: null
+icon: snapchat-ghost
+icon_style: brand
+icon_square: snapchat-square
+icon_circle: snapchat
+color: '#FFFC01'

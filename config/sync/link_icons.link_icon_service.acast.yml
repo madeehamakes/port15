@@ -1,0 +1,17 @@
+uuid: f1a9961f-579c-4d3c-834e-76927d1c18f0
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: YbiPf7YYrBQbTEhGn1s7T-R0MvLAvVryHCVyeAyyKYU
+id: acast
+label: Acast
+hostnames:
+  - acast.com
+  - play.acast.com
+class: null
+icon: podcast
+icon_style: solid
+icon_square: null
+icon_circle: null
+color: black

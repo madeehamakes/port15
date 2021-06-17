@@ -4,18 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.portfolio_item.body
+    - field.field.node.portfolio_item.field_featured
     - field.field.node.portfolio_item.field_header_image
-    - field.field.node.portfolio_item.field_links
-    - field.field.node.portfolio_item.field_password
-    - field.field.node.portfolio_item.field_rank_level
-    - field.field.node.portfolio_item.field_subheading
-    - field.field.node.portfolio_item.field_tag
+    - field.field.node.portfolio_item.field_tags
     - field.field.node.portfolio_item.field_thumbnail_image
     - image.style.thumbnail
     - node.type.portfolio_item
   module:
     - image
-    - link
     - path
     - text
 id: node.portfolio_item.default
@@ -39,6 +35,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_featured:
+    weight: 27
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   field_header_image:
     weight: 8
     settings:
@@ -47,43 +50,15 @@ content:
     third_party_settings: {  }
     type: image_image
     region: content
-  field_links:
-    weight: 11
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
-    region: content
-  field_password:
-    type: string_textfield
-    weight: 13
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_rank_level:
-    weight: 12
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
-  field_subheading:
-    weight: 10
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textarea
-    region: content
-  field_tag:
+  field_tags:
     weight: 26
     settings:
+      match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
+    type: entity_reference_autocomplete
     region: content
   field_thumbnail_image:
     weight: 9

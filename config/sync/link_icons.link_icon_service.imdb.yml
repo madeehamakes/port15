@@ -1,0 +1,17 @@
+uuid: 99e0945f-f4ee-4c95-809f-6de2a46ab096
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: a6FerYHfUaJYZAmPtcAsjmEgqSwK2wuJqjmFw7OH420
+id: imdb
+label: IMDb
+hostnames:
+  - imdb.com
+  - imdbpro.com
+class: null
+icon: imdb
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: '#E4BB36'
