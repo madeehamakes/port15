@@ -1,3 +1,15 @@
+/* 
+Remove padding top on Connect page */
+.block-inline-blockconnect-with-me-text {
+  .container {
+    .img-txt-wrap {
+      padding-top: 0px;
+    }
+  }
+
+}
+
+
 /* Styles for Form */
 
 .form-wrapper {
