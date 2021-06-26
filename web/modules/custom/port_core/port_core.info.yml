@@ -1,6 +1,6 @@
 name: "Port Core"
-description: "Contains functionality for the portfolio website"
+description: "Created Footer Copyright block using this module"
 core: 8.x
+core_version_requirement: ^8 || ^9
 package: "port"
 type: module
-configure: port_core.password_settings
